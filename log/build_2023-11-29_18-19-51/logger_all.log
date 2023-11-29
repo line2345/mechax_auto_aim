@@ -1,0 +1,562 @@
+[0.230s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.231s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb5a99a2260>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb5aa150ca0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb5aa150ca0>>)
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.251s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ghlins/new_tracker'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_17_25) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-00_18_04) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_27_19) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-01_28_58) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_51_21) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-16_55_55) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(record/rosbag2_2023_11_29-17_48_24) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_54_05) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_55_48) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-17_58_53) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2023_11_29-18_07_59) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ros2_opencv_pkg) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_ros2_opencv_pkg' with type 'ros.ament_cmake' and name 'my_ros2_opencv_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/armor_detector) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_auto_aim/armor_detector' with type 'ros.ament_cmake' and name 'armor_detector'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/auto_aim_interfaces) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_auto_aim/auto_aim_interfaces' with type 'ros.ament_cmake' and name 'auto_aim_interfaces'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'ros'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extensions ['cmake', 'python']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'cmake'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'python'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extensions ['python_setup_py']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/docs) by extension 'python_setup_py'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_auto_aim/new_tracker) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_auto_aim/new_tracker' with type 'ros.ament_cmake' and name 'new_armor_tracker'
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.286s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.287s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 368 installed packages in /opt/ros/humble
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package 'auto_aim_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ghlins/new_tracker/build/auto_aim_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ghlins/new_tracker/install/auto_aim_interfaces', 'merge_install': False, 'path': '/home/ghlins/new_tracker/src/rm_auto_aim/auto_aim_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'cmake_target' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'my_ros2_opencv_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package 'my_ros2_opencv_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg', 'merge_install': False, 'path': '/home/ghlins/new_tracker/src/my_ros2_opencv_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'armor_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'armor_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ghlins/new_tracker/build/armor_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ghlins/new_tracker/install/armor_detector', 'merge_install': False, 'path': '/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector', 'symlink_install': False, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'new_armor_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'new_armor_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ghlins/new_tracker/build/new_armor_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ghlins/new_tracker/install/new_armor_tracker', 'merge_install': False, 'path': '/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker', 'symlink_install': False, 'test_result_base': None}
+[0.327s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ghlins/new_tracker/src/rm_auto_aim/auto_aim_interfaces' with build type 'ament_cmake'
+[0.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ghlins/new_tracker/src/rm_auto_aim/auto_aim_interfaces'
+[0.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ghlins/new_tracker/src/my_ros2_opencv_pkg' with build type 'ament_cmake'
+[0.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ghlins/new_tracker/src/my_ros2_opencv_pkg'
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/auto_aim_interfaces -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/auto_aim_interfaces
+[0.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/new_tracker/src/my_ros2_opencv_pkg -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/my_ros2_opencv_pkg
+[2.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/auto_aim_interfaces -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/auto_aim_interfaces
+[2.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ghlins/new_tracker/build/auto_aim_interfaces -- -j20 -l20
+[5.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ghlins/new_tracker/build/auto_aim_interfaces -- -j20 -l20
+[5.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ghlins/new_tracker/build/auto_aim_interfaces
+[5.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auto_aim_interfaces)
+[5.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ghlins/new_tracker/build/auto_aim_interfaces
+[5.574s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces' for CMake module files
+[5.575s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces' for CMake config files
+[5.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'cmake_prefix_path')
+[5.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.ps1'
+[5.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.dsv'
+[5.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.sh'
+[5.577s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib'
+[5.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'ld_library_path_lib')
+[5.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.ps1'
+[5.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.dsv'
+[5.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.sh'
+[5.578s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/bin'
+[5.578s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/pkgconfig/auto_aim_interfaces.pc'
+[5.578s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/python3.10/site-packages'
+[5.579s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/bin'
+[5.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.ps1'
+[5.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv'
+[5.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.sh'
+[5.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.bash'
+[5.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.zsh'
+[5.581s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/auto_aim_interfaces/share/colcon-core/packages/auto_aim_interfaces)
+[5.670s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auto_aim_interfaces)
+[5.671s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces' for CMake module files
+[5.671s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces' for CMake config files
+[5.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'cmake_prefix_path')
+[5.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.ps1'
+[5.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.dsv'
+[5.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.sh'
+[5.673s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib'
+[5.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'ld_library_path_lib')
+[5.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.ps1'
+[5.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.dsv'
+[5.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.sh'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/bin'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/pkgconfig/auto_aim_interfaces.pc'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/python3.10/site-packages'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/auto_aim_interfaces/bin'
+[5.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.ps1'
+[5.676s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv'
+[5.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.sh'
+[5.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.bash'
+[5.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.zsh'
+[5.677s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/auto_aim_interfaces/share/colcon-core/packages/auto_aim_interfaces)
+[5.677s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector' with build type 'ament_cmake'
+[5.677s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector'
+[5.679s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.679s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.681s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker' with build type 'ament_cmake'
+[5.682s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker'
+[5.682s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.682s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector
+[5.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker
+[7.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/new_tracker/src/my_ros2_opencv_pkg -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/my_ros2_opencv_pkg
+[7.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ghlins/new_tracker/build/my_ros2_opencv_pkg -- -j20 -l20
+[10.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/new_armor_tracker' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker
+[10.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/new_armor_tracker -- -j20 -l20
+[10.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector
+[10.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/armor_detector -- -j20 -l20
+[13.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ghlins/new_tracker/build/my_ros2_opencv_pkg -- -j20 -l20
+[13.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ghlins/new_tracker/build/my_ros2_opencv_pkg
+[13.906s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_ros2_opencv_pkg)
+[13.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ghlins/new_tracker/build/my_ros2_opencv_pkg
+[13.908s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg' for CMake module files
+[13.909s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg' for CMake config files
+[13.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_ros2_opencv_pkg', 'cmake_prefix_path')
+[13.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/hook/cmake_prefix_path.ps1'
+[13.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/hook/cmake_prefix_path.dsv'
+[13.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/hook/cmake_prefix_path.sh'
+[13.912s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib'
+[13.912s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/bin'
+[13.912s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/pkgconfig/my_ros2_opencv_pkg.pc'
+[13.912s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/python3.10/site-packages'
+[13.912s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/bin'
+[13.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.ps1'
+[13.914s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.dsv'
+[13.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.sh'
+[13.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.bash'
+[13.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.zsh'
+[13.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/colcon-core/packages/my_ros2_opencv_pkg)
+[13.931s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_ros2_opencv_pkg)
+[13.933s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg' for CMake module files
+[13.933s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg' for CMake config files
+[13.933s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_ros2_opencv_pkg', 'cmake_prefix_path')
+[13.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/hook/cmake_prefix_path.ps1'
+[13.934s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/hook/cmake_prefix_path.dsv'
+[13.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/hook/cmake_prefix_path.sh'
+[13.935s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib'
+[13.935s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/bin'
+[13.935s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/pkgconfig/my_ros2_opencv_pkg.pc'
+[13.935s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/python3.10/site-packages'
+[13.935s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/bin'
+[13.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.ps1'
+[13.937s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.dsv'
+[13.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.sh'
+[13.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.bash'
+[13.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.zsh'
+[13.938s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/colcon-core/packages/my_ros2_opencv_pkg)
+[19.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/new_armor_tracker' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/new_armor_tracker -- -j20 -l20
+[19.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ghlins/new_tracker/build/new_armor_tracker
+[19.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(new_armor_tracker)
+[19.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/new_armor_tracker' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ghlins/new_tracker/build/new_armor_tracker
+[19.087s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker' for CMake module files
+[19.088s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker' for CMake config files
+[19.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('new_armor_tracker', 'cmake_prefix_path')
+[19.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/cmake_prefix_path.ps1'
+[19.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/cmake_prefix_path.dsv'
+[19.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/cmake_prefix_path.sh'
+[19.089s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/lib'
+[19.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('new_armor_tracker', 'ld_library_path_lib')
+[19.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/ld_library_path_lib.ps1'
+[19.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/ld_library_path_lib.dsv'
+[19.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/ld_library_path_lib.sh'
+[19.091s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/bin'
+[19.091s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/lib/pkgconfig/new_armor_tracker.pc'
+[19.092s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/lib/python3.10/site-packages'
+[19.092s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/bin'
+[19.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.ps1'
+[19.093s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.dsv'
+[19.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.sh'
+[19.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.bash'
+[19.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.zsh'
+[19.094s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/new_armor_tracker/share/colcon-core/packages/new_armor_tracker)
+[19.108s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(new_armor_tracker)
+[19.109s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker' for CMake module files
+[19.110s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker' for CMake config files
+[19.110s] Level 1:colcon.colcon_core.shell:create_environment_hook('new_armor_tracker', 'cmake_prefix_path')
+[19.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/cmake_prefix_path.ps1'
+[19.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/cmake_prefix_path.dsv'
+[19.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/cmake_prefix_path.sh'
+[19.111s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/lib'
+[19.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('new_armor_tracker', 'ld_library_path_lib')
+[19.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/ld_library_path_lib.ps1'
+[19.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/ld_library_path_lib.dsv'
+[19.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/hook/ld_library_path_lib.sh'
+[19.113s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/bin'
+[19.113s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/lib/pkgconfig/new_armor_tracker.pc'
+[19.113s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/lib/python3.10/site-packages'
+[19.113s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/new_armor_tracker/bin'
+[19.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.ps1'
+[19.114s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.dsv'
+[19.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.sh'
+[19.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.bash'
+[19.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.zsh'
+[19.115s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/new_armor_tracker/share/colcon-core/packages/new_armor_tracker)
+[30.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/armor_detector -- -j20 -l20
+[30.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ghlins/new_tracker/build/armor_detector
+[30.461s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(armor_detector)
+[30.462s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector' for CMake module files
+[30.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ghlins/new_tracker/build/armor_detector
+[30.463s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector' for CMake config files
+[30.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('armor_detector', 'cmake_prefix_path')
+[30.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/cmake_prefix_path.ps1'
+[30.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/cmake_prefix_path.dsv'
+[30.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/cmake_prefix_path.sh'
+[30.465s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/lib'
+[30.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('armor_detector', 'ld_library_path_lib')
+[30.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/ld_library_path_lib.ps1'
+[30.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/ld_library_path_lib.dsv'
+[30.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/ld_library_path_lib.sh'
+[30.466s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/bin'
+[30.466s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/lib/pkgconfig/armor_detector.pc'
+[30.466s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/lib/python3.10/site-packages'
+[30.466s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/bin'
+[30.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.ps1'
+[30.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.dsv'
+[30.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.sh'
+[30.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.bash'
+[30.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.zsh'
+[30.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/armor_detector/share/colcon-core/packages/armor_detector)
+[30.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(armor_detector)
+[30.489s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector' for CMake module files
+[30.490s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector' for CMake config files
+[30.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('armor_detector', 'cmake_prefix_path')
+[30.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/cmake_prefix_path.ps1'
+[30.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/cmake_prefix_path.dsv'
+[30.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/cmake_prefix_path.sh'
+[30.491s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/lib'
+[30.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('armor_detector', 'ld_library_path_lib')
+[30.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/ld_library_path_lib.ps1'
+[30.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/ld_library_path_lib.dsv'
+[30.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/hook/ld_library_path_lib.sh'
+[30.493s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/bin'
+[30.493s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/lib/pkgconfig/armor_detector.pc'
+[30.493s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/lib/python3.10/site-packages'
+[30.493s] Level 1:colcon.colcon_core.environment:checking '/home/ghlins/new_tracker/install/armor_detector/bin'
+[30.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.ps1'
+[30.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.dsv'
+[30.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.sh'
+[30.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.bash'
+[30.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.zsh'
+[30.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ghlins/new_tracker/install/armor_detector/share/colcon-core/packages/armor_detector)
+[30.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[30.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[30.496s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[30.496s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[30.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[30.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[30.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[30.534s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[30.535s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[30.535s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[30.536s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ghlins/new_tracker/install/local_setup.ps1'
+[30.537s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ghlins/new_tracker/install/_local_setup_util_ps1.py'
+[30.538s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ghlins/new_tracker/install/setup.ps1'
+[30.538s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ghlins/new_tracker/install/local_setup.sh'
+[30.539s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ghlins/new_tracker/install/_local_setup_util_sh.py'
+[30.539s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ghlins/new_tracker/install/setup.sh'
+[30.540s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ghlins/new_tracker/install/local_setup.bash'
+[30.540s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ghlins/new_tracker/install/setup.bash'
+[30.541s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ghlins/new_tracker/install/local_setup.zsh'
+[30.541s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ghlins/new_tracker/install/setup.zsh'

@@ -1,0 +1,856 @@
+[0.000000] (-) TimerEvent: {}
+[0.000499] (auto_aim_interfaces) JobQueued: {'identifier': 'auto_aim_interfaces', 'dependencies': OrderedDict()}
+[0.000552] (my_ros2_opencv_pkg) JobQueued: {'identifier': 'my_ros2_opencv_pkg', 'dependencies': OrderedDict()}
+[0.000567] (armor_detector) JobQueued: {'identifier': 'armor_detector', 'dependencies': OrderedDict([('auto_aim_interfaces', '/home/ghlins/new_tracker/install/auto_aim_interfaces')])}
+[0.000586] (new_armor_tracker) JobQueued: {'identifier': 'new_armor_tracker', 'dependencies': OrderedDict([('auto_aim_interfaces', '/home/ghlins/new_tracker/install/auto_aim_interfaces')])}
+[0.001227] (auto_aim_interfaces) JobStarted: {'identifier': 'auto_aim_interfaces'}
+[0.008199] (my_ros2_opencv_pkg) JobStarted: {'identifier': 'my_ros2_opencv_pkg'}
+[0.011507] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'cmake'}
+[0.011561] (auto_aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ghlins/new_tracker/src/rm_auto_aim/auto_aim_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/auto_aim_interfaces'], 'cwd': '/home/ghlins/new_tracker/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/auto_aim_interfaces'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.015007] (my_ros2_opencv_pkg) JobProgress: {'identifier': 'my_ros2_opencv_pkg', 'progress': 'cmake'}
+[0.015054] (my_ros2_opencv_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/ghlins/new_tracker/src/my_ros2_opencv_pkg', '-DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/my_ros2_opencv_pkg'], 'cwd': '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.088236] (auto_aim_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.089312] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100043] (-) TimerEvent: {}
+[0.200353] (-) TimerEvent: {}
+[0.300668] (-) TimerEvent: {}
+[0.396807] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.397063] (auto_aim_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.400872] (-) TimerEvent: {}
+[0.501139] (-) TimerEvent: {}
+[0.598988] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601291] (-) TimerEvent: {}
+[0.601844] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.671332] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.671474] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.675728] (auto_aim_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.675839] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.676092] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.676193] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.676227] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.676254] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.678124] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.678305] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701457] (-) TimerEvent: {}
+[0.766604] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.766792] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.771110] (auto_aim_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.771319] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.771513] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.771733] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.771789] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.771826] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.772684] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.772812] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801667] (-) TimerEvent: {}
+[0.875116] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.875464] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.902010] (-) TimerEvent: {}
+[0.925538] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.925766] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.927153] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.930732] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.002280] (-) TimerEvent: {}
+[1.003109] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.005291] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.005730] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.010546] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.018493] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.026363] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.031045] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.073456] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.074852] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.102506] (-) TimerEvent: {}
+[1.202852] (-) TimerEvent: {}
+[1.299940] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.302942] (-) TimerEvent: {}
+[1.403280] (-) TimerEvent: {}
+[1.456528] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.503407] (-) TimerEvent: {}
+[1.603710] (-) TimerEvent: {}
+[1.659118] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.703908] (-) TimerEvent: {}
+[1.759297] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.760334] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.804036] (-) TimerEvent: {}
+[1.904370] (-) TimerEvent: {}
+[2.004724] (-) TimerEvent: {}
+[2.005282] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.068945] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.069140] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.069196] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.069228] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.090636] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.104888] (-) TimerEvent: {}
+[2.165637] (auto_aim_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.194099] (auto_aim_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.195469] (auto_aim_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ghlins/new_tracker/build/auto_aim_interfaces\n'}
+[2.202242] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[2.202784] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'build'}
+[2.204338] (auto_aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ghlins/new_tracker/build/auto_aim_interfaces', '--', '-j20', '-l20'], 'cwd': '/home/ghlins/new_tracker/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/auto_aim_interfaces'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.204945] (-) TimerEvent: {}
+[2.225218] (auto_aim_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.230740] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.235897] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_auto_aim_interfaces\n'}
+[2.305066] (-) TimerEvent: {}
+[2.366788] (auto_aim_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.367072] (auto_aim_interfaces) StdoutLine: {'line': b'creating auto_aim_interfaces.egg-info\n'}
+[2.367273] (auto_aim_interfaces) StdoutLine: {'line': b'writing auto_aim_interfaces.egg-info/PKG-INFO\n'}
+[2.367465] (auto_aim_interfaces) StdoutLine: {'line': b'writing dependency_links to auto_aim_interfaces.egg-info/dependency_links.txt\n'}
+[2.367580] (auto_aim_interfaces) StdoutLine: {'line': b'writing top-level names to auto_aim_interfaces.egg-info/top_level.txt\n'}
+[2.367612] (auto_aim_interfaces) StdoutLine: {'line': b"writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[2.368961] (auto_aim_interfaces) StdoutLine: {'line': b"reading manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[2.369140] (auto_aim_interfaces) StdoutLine: {'line': b"writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[2.387294] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_auto_aim_interfaces_egg\n'}
+[2.405188] (-) TimerEvent: {}
+[2.505488] (-) TimerEvent: {}
+[2.556332] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target auto_aim_interfaces__cpp\n'}
+[2.562319] (auto_aim_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.562634] (auto_aim_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.562719] (auto_aim_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.601803] (auto_aim_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/target__functions.c.o\x1b[0m\n'}
+[2.602051] (auto_aim_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/armors__functions.c.o\x1b[0m\n'}
+[2.603201] (auto_aim_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/armor__functions.c.o\x1b[0m\n'}
+[2.603873] (auto_aim_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_armors__functions.c.o\x1b[0m\n'}
+[2.604202] (auto_aim_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_lights__functions.c.o\x1b[0m\n'}
+[2.604528] (auto_aim_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_light__functions.c.o\x1b[0m\n'}
+[2.604690] (auto_aim_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_armor__functions.c.o\x1b[0m\n'}
+[2.604956] (auto_aim_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/tracker_info__functions.c.o\x1b[0m\n'}
+[2.605646] (-) TimerEvent: {}
+[2.650697] (auto_aim_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libauto_aim_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.705760] (-) TimerEvent: {}
+[2.741688] (auto_aim_interfaces) StdoutLine: {'line': b'[ 16%] Built target auto_aim_interfaces__rosidl_generator_c\n'}
+[2.747405] (auto_aim_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.747783] (auto_aim_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.748346] (auto_aim_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.805937] (-) TimerEvent: {}
+[2.844643] (auto_aim_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/armors__type_support.cpp.o\x1b[0m\n'}
+[2.844955] (auto_aim_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[2.845128] (auto_aim_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[2.845363] (auto_aim_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[2.845827] (auto_aim_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/armor__type_support.cpp.o\x1b[0m\n'}
+[2.846051] (auto_aim_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_light__type_support.cpp.o\x1b[0m\n'}
+[2.846642] (auto_aim_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[2.846845] (auto_aim_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[2.893258] (auto_aim_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/armors__type_support.cpp.o\x1b[0m\n'}
+[2.893715] (auto_aim_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/armor__type_support.cpp.o\x1b[0m\n'}
+[2.893823] (auto_aim_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_light__type_support.cpp.o\x1b[0m\n'}
+[2.893886] (auto_aim_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[2.894077] (auto_aim_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[2.894175] (auto_aim_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[2.901193] (auto_aim_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[2.906067] (-) TimerEvent: {}
+[2.911886] (auto_aim_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[3.006189] (-) TimerEvent: {}
+[3.106569] (-) TimerEvent: {}
+[3.203642] (auto_aim_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[3.204059] (auto_aim_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_light__type_support.cpp.o\x1b[0m\n'}
+[3.204189] (auto_aim_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/armor__type_support.cpp.o\x1b[0m\n'}
+[3.204262] (auto_aim_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[3.206682] (-) TimerEvent: {}
+[3.207124] (auto_aim_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/armors__type_support.cpp.o\x1b[0m\n'}
+[3.207321] (auto_aim_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[3.222698] (auto_aim_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[3.223139] (auto_aim_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[3.224039] (auto_aim_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/armor__type_support.cpp.o\x1b[0m\n'}
+[3.268288] (auto_aim_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/armors__type_support.cpp.o\x1b[0m\n'}
+[3.275375] (auto_aim_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.306815] (-) TimerEvent: {}
+[3.335830] (auto_aim_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[3.384642] (auto_aim_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[3.390085] (auto_aim_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_light__type_support.cpp.o\x1b[0m\n'}
+[3.406947] (-) TimerEvent: {}
+[3.416799] (auto_aim_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[3.440003] (auto_aim_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[3.450511] (auto_aim_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[3.466755] (auto_aim_interfaces) StdoutLine: {'line': b'[ 57%] Built target auto_aim_interfaces__rosidl_typesupport_cpp\n'}
+[3.477197] (auto_aim_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[3.477486] (auto_aim_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/armors__type_support.c.o\x1b[0m\n'}
+[3.477835] (auto_aim_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/armor__type_support.c.o\x1b[0m\n'}
+[3.478184] (auto_aim_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_light__type_support.c.o\x1b[0m\n'}
+[3.491377] (auto_aim_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_armor__type_support.c.o\x1b[0m\n'}
+[3.491618] (auto_aim_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_lights__type_support.c.o\x1b[0m\n'}
+[3.500007] (auto_aim_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_armors__type_support.c.o\x1b[0m\n'}
+[3.505719] (auto_aim_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.507062] (-) TimerEvent: {}
+[3.510140] (auto_aim_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/tracker_info__type_support.c.o\x1b[0m\n'}
+[3.524136] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.550455] (auto_aim_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libauto_aim_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.592617] (auto_aim_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.607220] (-) TimerEvent: {}
+[3.622306] (auto_aim_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/armor__type_support_c.cpp.o\x1b[0m\n'}
+[3.622748] (auto_aim_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_lights__type_support_c.cpp.o\x1b[0m\n'}
+[3.622918] (auto_aim_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_light__type_support_c.cpp.o\x1b[0m\n'}
+[3.623078] (auto_aim_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/armors__type_support_c.cpp.o\x1b[0m\n'}
+[3.623298] (auto_aim_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[3.623412] (auto_aim_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_armors__type_support_c.cpp.o\x1b[0m\n'}
+[3.623842] (auto_aim_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_armor__type_support_c.cpp.o\x1b[0m\n'}
+[3.625406] (auto_aim_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/tracker_info__type_support_c.cpp.o\x1b[0m\n'}
+[3.669412] (auto_aim_interfaces) StdoutLine: {'line': b'[ 79%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.680734] (auto_aim_interfaces) StdoutLine: {'line': b'[ 79%] Built target auto_aim_interfaces__rosidl_typesupport_c\n'}
+[3.707395] (-) TimerEvent: {}
+[3.779127] (auto_aim_interfaces) StdoutLine: {'line': b'[ 79%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.807559] (-) TimerEvent: {}
+[3.810118] (auto_aim_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.907710] (-) TimerEvent: {}
+[3.956902] (auto_aim_interfaces) StdoutLine: {'line': b'[ 80%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.984124] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.007821] (-) TimerEvent: {}
+[4.092999] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.102892] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] Built target auto_aim_interfaces\n'}
+[4.107922] (-) TimerEvent: {}
+[4.113826] (auto_aim_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.208159] (-) TimerEvent: {}
+[4.308543] (-) TimerEvent: {}
+[4.408854] (-) TimerEvent: {}
+[4.509213] (-) TimerEvent: {}
+[4.609622] (-) TimerEvent: {}
+[4.636116] (auto_aim_interfaces) StdoutLine: {'line': b'[ 82%] Built target auto_aim_interfaces__py\n'}
+[4.647265] (auto_aim_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_armors_s.c.o\x1b[0m\n'}
+[4.647532] (auto_aim_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_lights_s.c.o\x1b[0m\n'}
+[4.647688] (auto_aim_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_armor_s.c.o\x1b[0m\n'}
+[4.647821] (auto_aim_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_target_s.c.o\x1b[0m\n'}
+[4.649174] (auto_aim_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_tracker_info_s.c.o\x1b[0m\n'}
+[4.649501] (auto_aim_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_armors_s.c.o\x1b[0m\n'}
+[4.649684] (auto_aim_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_armor_s.c.o\x1b[0m\n'}
+[4.651120] (auto_aim_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_light_s.c.o\x1b[0m\n'}
+[4.709774] (-) TimerEvent: {}
+[4.733578] (auto_aim_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[4.809911] (-) TimerEvent: {}
+[4.818536] (auto_aim_interfaces) StdoutLine: {'line': b'[ 93%] Built target auto_aim_interfaces__rosidl_generator_py\n'}
+[4.829043] (auto_aim_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.829226] (auto_aim_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.829291] (auto_aim_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.894850] (auto_aim_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.895022] (auto_aim_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.895574] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.910034] (-) TimerEvent: {}
+[4.966027] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.967964] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.981807] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.988809] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[5.010228] (-) TimerEvent: {}
+[5.073740] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'install'}
+[5.078708] (auto_aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ghlins/new_tracker/build/auto_aim_interfaces'], 'cwd': '/home/ghlins/new_tracker/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/auto_aim_interfaces'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.082887] (auto_aim_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.083092] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/auto_aim_interfaces\n'}
+[5.083251] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[5.083391] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[5.083486] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.h\n'}
+[5.083576] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.h\n'}
+[5.083666] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.h\n'}
+[5.083791] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.h\n'}
+[5.083866] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.h\n'}
+[5.084014] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.h\n'}
+[5.084231] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.h\n'}
+[5.084347] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.h\n'}
+[5.084441] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.084531] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[5.084623] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.h\n'}
+[5.084713] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.c\n'}
+[5.084855] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.h\n'}
+[5.084947] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.h\n'}
+[5.085036] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.h\n'}
+[5.085125] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.c\n'}
+[5.085218] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.h\n'}
+[5.085306] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.h\n'}
+[5.085386] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.c\n'}
+[5.085455] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.h\n'}
+[5.085547] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.h\n'}
+[5.085637] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.h\n'}
+[5.085727] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.h\n'}
+[5.085816] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.h\n'}
+[5.085904] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.h\n'}
+[5.085987] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.h\n'}
+[5.086076] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.c\n'}
+[5.086143] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.h\n'}
+[5.086274] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.h\n'}
+[5.086497] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.h\n'}
+[5.086694] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.h\n'}
+[5.086850] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.h\n'}
+[5.086899] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.h\n'}
+[5.086966] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.h\n'}
+[5.087058] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.c\n'}
+[5.087113] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.h\n'}
+[5.087183] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.h\n'}
+[5.087274] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.h\n'}
+[5.087355] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.h\n'}
+[5.087445] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.c\n'}
+[5.087570] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.c\n'}
+[5.087675] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.c\n'}
+[5.087763] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.sh\n'}
+[5.087855] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.dsv\n'}
+[5.088053] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so\n'}
+[5.088167] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so" to ""\n'}
+[5.088260] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[5.088349] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[5.088436] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.088527] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[5.088615] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_c.h\n'}
+[5.088704] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_c.h\n'}
+[5.088824] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_c.h\n'}
+[5.088857] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_c.h\n'}
+[5.088890] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[5.089054] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_c.h\n'}
+[5.089154] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_c.h\n'}
+[5.089242] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_c.h\n'}
+[5.089328] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.089416] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.089504] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[5.089592] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[5.089679] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.089768] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[5.089856] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_c.h\n'}
+[5.089944] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.c\n'}
+[5.090032] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_c.h\n'}
+[5.090120] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.c\n'}
+[5.090208] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.c\n'}
+[5.090295] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.c\n'}
+[5.090382] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[5.090561] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.c\n'}
+[5.090656] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_c.h\n'}
+[5.090747] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_c.h\n'}
+[5.090835] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_c.h\n'}
+[5.090925] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_c.h\n'}
+[5.091014] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.c\n'}
+[5.091103] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.c\n'}
+[5.091182] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.c\n'}
+[5.091274] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_c.h\n'}
+[5.091364] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.091455] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.091546] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so\n'}
+[5.091634] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.091725] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[5.091817] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[5.091908] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.hpp\n'}
+[5.091997] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.hpp\n'}
+[5.092095] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.hpp\n'}
+[5.092187] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.hpp\n'}
+[5.092279] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.hpp\n'}
+[5.092370] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.hpp\n'}
+[5.092480] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.hpp\n'}
+[5.092556] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[5.092651] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.hpp\n'}
+[5.092744] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__traits.hpp\n'}
+[5.092827] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__traits.hpp\n'}
+[5.092920] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__builder.hpp\n'}
+[5.093012] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__traits.hpp\n'}
+[5.093150] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__traits.hpp\n'}
+[5.093244] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__builder.hpp\n'}
+[5.093317] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__builder.hpp\n'}
+[5.093411] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__builder.hpp\n'}
+[5.093506] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.hpp\n'}
+[5.093600] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.hpp\n'}
+[5.093690] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__traits.hpp\n'}
+[5.093782] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.hpp\n'}
+[5.093864] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__builder.hpp\n'}
+[5.093958] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.hpp\n'}
+[5.094046] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.hpp\n'}
+[5.094138] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.hpp\n'}
+[5.094233] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__traits.hpp\n'}
+[5.094317] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__traits.hpp\n'}
+[5.094485] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__builder.hpp\n'}
+[5.094692] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__traits.hpp\n'}
+[5.094786] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.hpp\n'}
+[5.094876] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__builder.hpp\n'}
+[5.095127] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__builder.hpp\n'}
+[5.095235] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.hpp\n'}
+[5.095326] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[5.095416] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[5.095496] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.095681] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[5.095781] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.095871] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.095960] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.096114] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.096151] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.096181] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.096213] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/dds_fastrtps\n'}
+[5.096240] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.096285] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.096323] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.096370] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.096403] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[5.096432] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[5.096460] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[5.096487] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096516] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096542] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.cpp\n'}
+[5.096568] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.cpp\n'}
+[5.096594] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.cpp\n'}
+[5.096621] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.cpp\n'}
+[5.096648] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.cpp\n'}
+[5.096673] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096698] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096723] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096749] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096777] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.cpp\n'}
+[5.096804] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.cpp\n'}
+[5.096830] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096856] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.096886] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.cpp\n'}
+[5.096914] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.096939] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.096965] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.096992] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.097019] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.sh\n'}
+[5.097045] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.dsv\n'}
+[5.097070] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info\n'}
+[5.097096] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.097122] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.097148] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.097175] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.097201] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces\n'}
+[5.097226] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.097253] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.097280] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.097306] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.097332] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg\n'}
+[5.097356] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py\n'}
+[5.097382] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights_s.c\n'}
+[5.097407] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info_s.c\n'}
+[5.097431] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py\n'}
+[5.097455] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light_s.c\n'}
+[5.097480] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors_s.c\n'}
+[5.097505] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py\n'}
+[5.097529] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py\n'}
+[5.097554] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor_s.c\n'}
+[5.097583] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py\n'}
+[5.097609] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py\n'}
+[5.097633] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py\n'}
+[5.097658] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py\n'}
+[5.097704] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target_s.c\n'}
+[5.097737] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors_s.c\n'}
+[5.097765] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py\n'}
+[5.097793] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor_s.c\n'}
+[5.097822] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.097850] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so\n'}
+[5.097878] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py\n'}
+[5.097904] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.110386] (-) TimerEvent: {}
+[5.121108] (auto_aim_interfaces) StdoutLine: {'line': b"Listing '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces'...\n"}
+[5.121242] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py'...\n"}
+[5.121276] (auto_aim_interfaces) StdoutLine: {'line': b"Listing '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg'...\n"}
+[5.121305] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py'...\n"}
+[5.121334] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py'...\n"}
+[5.121362] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py'...\n"}
+[5.121388] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py'...\n"}
+[5.121415] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py'...\n"}
+[5.121439] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py'...\n"}
+[5.121465] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py'...\n"}
+[5.121490] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py'...\n"}
+[5.121515] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py'...\n"}
+[5.124483] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.124629] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.124719] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.124874] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.125000] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.125117] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.125241] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so\n'}
+[5.125394] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.125555] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.idl\n'}
+[5.125640] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.idl\n'}
+[5.125735] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.idl\n'}
+[5.125898] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.idl\n'}
+[5.125974] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.idl\n'}
+[5.126066] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.idl\n'}
+[5.126155] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.idl\n'}
+[5.126299] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.idl\n'}
+[5.126728] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.msg\n'}
+[5.126995] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.msg\n'}
+[5.127093] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.msg\n'}
+[5.127184] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.msg\n'}
+[5.127272] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.msg\n'}
+[5.127361] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.msg\n'}
+[5.127451] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.msg\n'}
+[5.127538] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.msg\n'}
+[5.127626] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/ament_index/resource_index/package_run_dependencies/auto_aim_interfaces\n'}
+[5.127762] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/ament_index/resource_index/parent_prefix_path/auto_aim_interfaces\n'}
+[5.127827] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.sh\n'}
+[5.127896] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.127931] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.sh\n'}
+[5.128018] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.dsv\n'}
+[5.128106] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.bash\n'}
+[5.128196] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.sh\n'}
+[5.128285] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.zsh\n'}
+[5.128343] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.dsv\n'}
+[5.128653] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv\n'}
+[5.128748] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/ament_index/resource_index/packages/auto_aim_interfaces\n'}
+[5.128928] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.129020] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.129107] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.129196] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.129335] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.129452] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.129554] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.129643] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.129732] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.129872] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.129912] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.129942] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.129970] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.129998] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.130024] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.130052] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.130080] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.130106] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.130132] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.130158] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.130187] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.130212] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.130236] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.130262] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.130286] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig.cmake\n'}
+[5.130313] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig-version.cmake\n'}
+[5.130337] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/auto_aim_interfaces/share/auto_aim_interfaces/package.xml\n'}
+[5.131136] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[5.210527] (-) TimerEvent: {}
+[5.240236] (auto_aim_interfaces) JobEnded: {'identifier': 'auto_aim_interfaces', 'rc': 0}
+[5.242277] (armor_detector) JobStarted: {'identifier': 'armor_detector'}
+[5.244903] (new_armor_tracker) JobStarted: {'identifier': 'new_armor_tracker'}
+[5.300295] (armor_detector) JobProgress: {'identifier': 'armor_detector', 'progress': 'cmake'}
+[5.300915] (armor_detector) Command: {'cmd': ['/usr/bin/cmake', '/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector', '-DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector'], 'cwd': '/home/ghlins/new_tracker/build/armor_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/armor_detector'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[5.303963] (new_armor_tracker) JobProgress: {'identifier': 'new_armor_tracker', 'progress': 'cmake'}
+[5.303987] (new_armor_tracker) Command: {'cmd': ['/usr/bin/cmake', '/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker', '-DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker'], 'cwd': '/home/ghlins/new_tracker/build/new_armor_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/new_armor_tracker'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[5.310649] (-) TimerEvent: {}
+[5.404626] (new_armor_tracker) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.408712] (armor_detector) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.410767] (-) TimerEvent: {}
+[5.511103] (-) TimerEvent: {}
+[5.611445] (-) TimerEvent: {}
+[5.662938] (my_ros2_opencv_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.668887] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.711713] (-) TimerEvent: {}
+[5.758864] (armor_detector) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.763077] (new_armor_tracker) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.791375] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.791664] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.811872] (-) TimerEvent: {}
+[5.911712] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.911880] (-) TimerEvent: {}
+[5.912452] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.012087] (-) TimerEvent: {}
+[6.021279] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.025844] (armor_detector) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.031338] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[6.032675] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.111302] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.111662] (armor_detector) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.112227] (-) TimerEvent: {}
+[6.115914] (armor_detector) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.116342] (armor_detector) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.116422] (new_armor_tracker) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.116497] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.116562] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.116625] (armor_detector) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.116834] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[6.118155] (armor_detector) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.118261] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.122337] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found image_transport: 3.1.5 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[6.212286] (armor_detector) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.212441] (-) TimerEvent: {}
+[6.213354] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.217394] (armor_detector) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.217662] (armor_detector) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.217792] (armor_detector) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.218056] (new_armor_tracker) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.218272] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.218586] (new_armor_tracker) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.219043] (armor_detector) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[6.219789] (new_armor_tracker) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[6.312582] (-) TimerEvent: {}
+[6.336595] (armor_detector) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[6.340895] (new_armor_tracker) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[6.401728] (armor_detector) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[6.402836] (new_armor_tracker) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[6.412724] (-) TimerEvent: {}
+[6.513090] (-) TimerEvent: {}
+[6.542383] (armor_detector) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.542599] (new_armor_tracker) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.545501] (new_armor_tracker) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.545728] (armor_detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.550618] (new_armor_tracker) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.550847] (armor_detector) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.559009] (new_armor_tracker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.559413] (armor_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.571534] (new_armor_tracker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.571816] (armor_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.613223] (-) TimerEvent: {}
+[6.617880] (armor_detector) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.618324] (new_armor_tracker) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.619331] (armor_detector) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.619863] (new_armor_tracker) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.713349] (-) TimerEvent: {}
+[6.813700] (-) TimerEvent: {}
+[6.914040] (-) TimerEvent: {}
+[7.014403] (-) TimerEvent: {}
+[7.076777] (armor_detector) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.077787] (new_armor_tracker) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.114525] (-) TimerEvent: {}
+[7.119156] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.172782] (my_ros2_opencv_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.172999] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ghlins/new_tracker/src/my_ros2_opencv_pkg/include>\n'}
+[7.173070] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.173279] (my_ros2_opencv_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.173850] (my_ros2_opencv_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.173936] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.174099] (my_ros2_opencv_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.174799] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.182673] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[7.183642] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/ghlins/new_tracker/build/my_ros2_opencv_pkg\n'}
+[7.190760] (my_ros2_opencv_pkg) CommandEnded: {'returncode': 0}
+[7.191253] (my_ros2_opencv_pkg) JobProgress: {'identifier': 'my_ros2_opencv_pkg', 'progress': 'build'}
+[7.191838] (my_ros2_opencv_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg', '--', '-j20', '-l20'], 'cwd': '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.214655] (-) TimerEvent: {}
+[7.219032] (my_ros2_opencv_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_video_publisher.dir/src/my_video_publisher.cpp.o\x1b[0m\n'}
+[7.314772] (-) TimerEvent: {}
+[7.415099] (-) TimerEvent: {}
+[7.511468] (new_armor_tracker) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.511864] (armor_detector) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.515213] (-) TimerEvent: {}
+[7.615551] (-) TimerEvent: {}
+[7.716095] (-) TimerEvent: {}
+[7.816664] (-) TimerEvent: {}
+[7.917003] (-) TimerEvent: {}
+[8.017340] (-) TimerEvent: {}
+[8.117794] (-) TimerEvent: {}
+[8.218217] (-) TimerEvent: {}
+[8.299897] (new_armor_tracker) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.300208] (armor_detector) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.306159] (new_armor_tracker) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.306307] (armor_detector) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.318501] (-) TimerEvent: {}
+[8.396004] (armor_detector) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.396305] (armor_detector) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.396634] (new_armor_tracker) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.396736] (new_armor_tracker) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.418614] (-) TimerEvent: {}
+[8.504884] (new_armor_tracker) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.505181] (armor_detector) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.505605] (new_armor_tracker) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.505894] (armor_detector) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.518823] (-) TimerEvent: {}
+[8.619216] (-) TimerEvent: {}
+[8.719795] (-) TimerEvent: {}
+[8.820209] (-) TimerEvent: {}
+[8.920533] (-) TimerEvent: {}
+[9.020918] (-) TimerEvent: {}
+[9.121251] (-) TimerEvent: {}
+[9.221596] (-) TimerEvent: {}
+[9.321941] (-) TimerEvent: {}
+[9.422284] (-) TimerEvent: {}
+[9.522653] (-) TimerEvent: {}
+[9.623145] (-) TimerEvent: {}
+[9.723529] (-) TimerEvent: {}
+[9.823971] (-) TimerEvent: {}
+[9.924354] (-) TimerEvent: {}
+[10.024709] (-) TimerEvent: {}
+[10.042868] (new_armor_tracker) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[10.044205] (new_armor_tracker) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[10.044642] (new_armor_tracker) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[10.124883] (-) TimerEvent: {}
+[10.132655] (armor_detector) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[10.133562] (armor_detector) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[10.133641] (armor_detector) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[10.225038] (-) TimerEvent: {}
+[10.277349] (new_armor_tracker) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.291416] (new_armor_tracker) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.291562] (new_armor_tracker) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include\n'}
+[10.291601] (new_armor_tracker) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.291997] (new_armor_tracker) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.292562] (new_armor_tracker) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.292842] (new_armor_tracker) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.293446] (new_armor_tracker) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.294580] (new_armor_tracker) StdoutLine: {'line': b"-- Added test 'clang_format' to check C / C++ code style\n"}
+[10.296071] (new_armor_tracker) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.308114] (new_armor_tracker) StdoutLine: {'line': b'-- Generating done\n'}
+[10.309495] (new_armor_tracker) StdoutLine: {'line': b'-- Build files have been written to: /home/ghlins/new_tracker/build/new_armor_tracker\n'}
+[10.317885] (new_armor_tracker) CommandEnded: {'returncode': 0}
+[10.318693] (new_armor_tracker) JobProgress: {'identifier': 'new_armor_tracker', 'progress': 'build'}
+[10.319147] (new_armor_tracker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ghlins/new_tracker/build/new_armor_tracker', '--', '-j20', '-l20'], 'cwd': '/home/ghlins/new_tracker/build/new_armor_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/new_armor_tracker'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[10.325067] (armor_detector) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.325208] (-) TimerEvent: {}
+[10.336534] (armor_detector) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[10.337760] (armor_detector) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[10.345099] (armor_detector) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.345305] (armor_detector) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include\n'}
+[10.345392] (armor_detector) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.345878] (armor_detector) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.346392] (armor_detector) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.347171] (armor_detector) StdoutLine: {'line': b"-- Added test 'clang_format' to check C / C++ code style\n"}
+[10.348773] (armor_detector) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.350512] (new_armor_tracker) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/new_armor_tracker_node.dir/rclcpp_components/node_main_new_armor_tracker_node.cpp.o\x1b[0m\n'}
+[10.351085] (new_armor_tracker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o\x1b[0m\n'}
+[10.373434] (armor_detector) StdoutLine: {'line': b'-- Generating done\n'}
+[10.374901] (armor_detector) StdoutLine: {'line': b'-- Build files have been written to: /home/ghlins/new_tracker/build/armor_detector\n'}
+[10.389134] (armor_detector) CommandEnded: {'returncode': 0}
+[10.390047] (armor_detector) JobProgress: {'identifier': 'armor_detector', 'progress': 'build'}
+[10.390779] (armor_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ghlins/new_tracker/build/armor_detector', '--', '-j20', '-l20'], 'cwd': '/home/ghlins/new_tracker/build/armor_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/armor_detector'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[10.425460] (-) TimerEvent: {}
+[10.430580] (armor_detector) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o\x1b[0m\n'}
+[10.430843] (armor_detector) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o\x1b[0m\n'}
+[10.431171] (armor_detector) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[10.431517] (armor_detector) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o\x1b[0m\n'}
+[10.431698] (armor_detector) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o\x1b[0m\n'}
+[10.432408] (armor_detector) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[10.432571] (armor_detector) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o\x1b[0m\n'}
+[10.525630] (-) TimerEvent: {}
+[10.626140] (-) TimerEvent: {}
+[10.726715] (-) TimerEvent: {}
+[10.827120] (-) TimerEvent: {}
+[10.927724] (-) TimerEvent: {}
+[11.028236] (-) TimerEvent: {}
+[11.052526] (armor_detector) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[11.080850] (armor_detector) StdoutLine: {'line': b'[ 53%] Built target gtest_main\n'}
+[11.128398] (-) TimerEvent: {}
+[11.228895] (-) TimerEvent: {}
+[11.329399] (-) TimerEvent: {}
+[11.429878] (-) TimerEvent: {}
+[11.530376] (-) TimerEvent: {}
+[11.630861] (-) TimerEvent: {}
+[11.731407] (-) TimerEvent: {}
+[11.831898] (-) TimerEvent: {}
+[11.932395] (-) TimerEvent: {}
+[12.032869] (-) TimerEvent: {}
+[12.133380] (-) TimerEvent: {}
+[12.233926] (-) TimerEvent: {}
+[12.332566] (my_ros2_opencv_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable my_video_publisher\x1b[0m\n'}
+[12.334083] (-) TimerEvent: {}
+[12.434550] (-) TimerEvent: {}
+[12.535159] (-) TimerEvent: {}
+[12.635744] (-) TimerEvent: {}
+[12.736223] (-) TimerEvent: {}
+[12.836705] (-) TimerEvent: {}
+[12.901446] (my_ros2_opencv_pkg) StdoutLine: {'line': b'[100%] Built target my_video_publisher\n'}
+[12.911358] (my_ros2_opencv_pkg) CommandEnded: {'returncode': 0}
+[12.932296] (my_ros2_opencv_pkg) JobProgress: {'identifier': 'my_ros2_opencv_pkg', 'progress': 'install'}
+[12.932743] (my_ros2_opencv_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg'], 'cwd': '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.936877] (-) TimerEvent: {}
+[12.938672] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.938857] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/my_ros2_opencv_pkg/my_video_publisher\n'}
+[12.939745] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/my_ros2_opencv_pkg/my_video_publisher" to ""\n'}
+[12.939986] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/ament_index/resource_index/package_run_dependencies/my_ros2_opencv_pkg\n'}
+[12.940133] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/ament_index/resource_index/parent_prefix_path/my_ros2_opencv_pkg\n'}
+[12.940390] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/environment/ament_prefix_path.sh\n'}
+[12.940584] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/environment/ament_prefix_path.dsv\n'}
+[12.940876] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/environment/path.sh\n'}
+[12.940985] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/environment/path.dsv\n'}
+[12.941062] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/local_setup.bash\n'}
+[12.941131] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/local_setup.sh\n'}
+[12.941240] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/local_setup.zsh\n'}
+[12.941466] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/local_setup.dsv\n'}
+[12.941640] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.dsv\n'}
+[12.941729] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/ament_index/resource_index/packages/my_ros2_opencv_pkg\n'}
+[12.941803] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/cmake/my_ros2_opencv_pkgConfig.cmake\n'}
+[12.941914] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/cmake/my_ros2_opencv_pkgConfig-version.cmake\n'}
+[12.941980] (my_ros2_opencv_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/share/my_ros2_opencv_pkg/package.xml\n'}
+[12.944591] (my_ros2_opencv_pkg) CommandEnded: {'returncode': 0}
+[12.976810] (my_ros2_opencv_pkg) JobEnded: {'identifier': 'my_ros2_opencv_pkg', 'rc': 0}
+[13.037178] (-) TimerEvent: {}
+[13.137640] (-) TimerEvent: {}
+[13.176894] (armor_detector) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[13.212625] (armor_detector) StdoutLine: {'line': b'[ 60%] Built target gtest\n'}
+[13.237882] (-) TimerEvent: {}
+[13.338230] (-) TimerEvent: {}
+[13.438593] (-) TimerEvent: {}
+[13.448246] (armor_detector) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable armor_detector_node\x1b[0m\n'}
+[13.538762] (-) TimerEvent: {}
+[13.544639] (new_armor_tracker) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable new_armor_tracker_node\x1b[0m\n'}
+[13.596371] (armor_detector) StdoutLine: {'line': b'[ 66%] Built target armor_detector_node\n'}
+[13.638931] (-) TimerEvent: {}
+[13.685647] (new_armor_tracker) StdoutLine: {'line': b'[ 75%] Built target new_armor_tracker_node\n'}
+[13.739154] (-) TimerEvent: {}
+[13.839562] (-) TimerEvent: {}
+[13.939978] (-) TimerEvent: {}
+[14.040343] (-) TimerEvent: {}
+[14.140754] (-) TimerEvent: {}
+[14.241127] (-) TimerEvent: {}
+[14.341509] (-) TimerEvent: {}
+[14.435401] (armor_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rm_auto_aim::ArmorDetectorNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.435636] (armor_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:157:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karmors_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Karmors_msg_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.435684] (armor_detector) StderrLine: {'line': b'  157 |     double my_armor_x = \x1b[01;31m\x1b[Karmors_msg\x1b[m\x1b[K.pose.position.x;\n'}
+[14.435718] (armor_detector) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.435749] (armor_detector) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Karmors_msg_\x1b[m\x1b[K\n'}
+[14.441727] (-) TimerEvent: {}
+[14.542208] (-) TimerEvent: {}
+[14.642749] (-) TimerEvent: {}
+[14.743228] (-) TimerEvent: {}
+[14.843567] (-) TimerEvent: {}
+[14.943984] (-) TimerEvent: {}
+[15.044367] (-) TimerEvent: {}
+[15.144735] (-) TimerEvent: {}
+[15.245085] (-) TimerEvent: {}
+[15.345572] (-) TimerEvent: {}
+[15.445924] (-) TimerEvent: {}
+[15.546356] (-) TimerEvent: {}
+[15.646742] (-) TimerEvent: {}
+[15.747164] (-) TimerEvent: {}
+[15.847577] (-) TimerEvent: {}
+[15.947954] (-) TimerEvent: {}
+[16.048321] (-) TimerEvent: {}
+[16.148762] (-) TimerEvent: {}
+[16.249252] (-) TimerEvent: {}
+[16.349637] (-) TimerEvent: {}
+[16.450058] (-) TimerEvent: {}
+[16.550409] (-) TimerEvent: {}
+[16.650788] (-) TimerEvent: {}
+[16.751175] (-) TimerEvent: {}
+[16.851549] (-) TimerEvent: {}
+[16.951962] (-) TimerEvent: {}
+[17.052329] (-) TimerEvent: {}
+[17.152662] (-) TimerEvent: {}
+[17.252977] (-) TimerEvent: {}
+[17.353363] (-) TimerEvent: {}
+[17.453796] (-) TimerEvent: {}
+[17.554176] (-) TimerEvent: {}
+[17.654587] (-) TimerEvent: {}
+[17.755056] (-) TimerEvent: {}
+[17.855501] (-) TimerEvent: {}
+[17.956084] (-) TimerEvent: {}
+[17.994692] (new_armor_tracker) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libnew_armor_tracker.so\x1b[0m\n'}
+[18.056234] (-) TimerEvent: {}
+[18.156699] (-) TimerEvent: {}
+[18.257080] (-) TimerEvent: {}
+[18.357420] (-) TimerEvent: {}
+[18.383850] (new_armor_tracker) StdoutLine: {'line': b'[100%] Built target new_armor_tracker\n'}
+[18.390458] (new_armor_tracker) CommandEnded: {'returncode': 0}
+[18.404530] (new_armor_tracker) JobProgress: {'identifier': 'new_armor_tracker', 'progress': 'install'}
+[18.405327] (new_armor_tracker) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ghlins/new_tracker/build/new_armor_tracker'], 'cwd': '/home/ghlins/new_tracker/build/new_armor_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghlins'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghlins'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ghlins'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghlins'), ('NAME', 'line'), ('WSL_INTEROP', '/run/WSL/18052_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ghlins/.local/bin:/home/ghlins/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/python3.10.8/Scripts/:/mnt/d/python3.10.8/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/mingw64/bin:/mnt/d/git2.39/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/e/tex/texlive/2023/bin/windows:/mnt/c/Users/86198/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ghlins/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ghlins/new_tracker/build/new_armor_tracker'), ('CONDA_EXE', '/home/ghlins/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[18.409564] (new_armor_tracker) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.409727] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/lib/new_armor_tracker/new_armor_tracker_node\n'}
+[18.410136] (new_armor_tracker) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/new_armor_tracker/lib/new_armor_tracker/new_armor_tracker_node" to ""\n'}
+[18.410219] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/include\n'}
+[18.410274] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/include/new_tracker\n'}
+[18.410303] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/include/new_tracker/new_tracker_node.hpp\n'}
+[18.410380] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/environment/library_path.sh\n'}
+[18.410472] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/environment/library_path.dsv\n'}
+[18.410625] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/lib/libnew_armor_tracker.so\n'}
+[18.414845] (new_armor_tracker) StdoutLine: {'line': b'-- Set runtime path of "/home/ghlins/new_tracker/install/new_armor_tracker/lib/libnew_armor_tracker.so" to ""\n'}
+[18.414926] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/ament_index/resource_index/package_run_dependencies/new_armor_tracker\n'}
+[18.415082] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/ament_index/resource_index/parent_prefix_path/new_armor_tracker\n'}
+[18.415137] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/environment/ament_prefix_path.sh\n'}
+[18.415169] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/environment/ament_prefix_path.dsv\n'}
+[18.415205] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/environment/path.sh\n'}
+[18.415338] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/environment/path.dsv\n'}
+[18.415426] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/local_setup.bash\n'}
+[18.415667] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/local_setup.sh\n'}
+[18.415775] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/local_setup.zsh\n'}
+[18.415971] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/local_setup.dsv\n'}
+[18.416124] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.dsv\n'}
+[18.416157] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/ament_index/resource_index/packages/new_armor_tracker\n'}
+[18.416186] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/ament_index/resource_index/rclcpp_components/new_armor_tracker\n'}
+[18.416215] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.416243] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.416273] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.416299] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/cmake/new_armor_trackerConfig.cmake\n'}
+[18.416326] (new_armor_tracker) StdoutLine: {'line': b'-- Installing: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/cmake/new_armor_trackerConfig-version.cmake\n'}
+[18.416353] (new_armor_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/ghlins/new_tracker/install/new_armor_tracker/share/new_armor_tracker/package.xml\n'}
+[18.418751] (new_armor_tracker) CommandEnded: {'returncode': 0}
+[18.445808] (armor_detector) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1\n'}
+[18.446017] (armor_detector) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2\n'}
+[18.446474] (armor_detector) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.447738] (new_armor_tracker) JobEnded: {'identifier': 'new_armor_tracker', 'rc': 0}
+[18.448784] (armor_detector) CommandEnded: {'returncode': 2}
+[18.457610] (-) TimerEvent: {}
+[18.477267] (armor_detector) JobEnded: {'identifier': 'armor_detector', 'rc': 2}
+[18.478549] (-) EventReactorShutdown: {}

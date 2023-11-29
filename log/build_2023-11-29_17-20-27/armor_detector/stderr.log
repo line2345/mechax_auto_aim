@@ -1,0 +1,32 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:156:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _armors_type = class std::vector<auto_aim_interfaces::msg::Armor_<std::allocator<void> >, std::allocator<auto_aim_interfaces::msg::Armor_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<auto_aim_interfaces::msg::Armor_<std::allocator<void> >, std::allocator<auto_aim_interfaces::msg::Armor_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Karmor[m[K’
+  156 |     double my_armor_x = armors_msg_.armors.[01;31m[Karmor[m[K.pose.position.x;
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:157:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _armors_type = class std::vector<auto_aim_interfaces::msg::Armor_<std::allocator<void> >, std::allocator<auto_aim_interfaces::msg::Armor_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<auto_aim_interfaces::msg::Armor_<std::allocator<void> >, std::allocator<auto_aim_interfaces::msg::Armor_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Karmor[m[K’
+  157 |     double my_armor_y = armors_msg_.armors.[01;31m[Karmor[m[K.pose.position.y;
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:158:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _armors_type = class std::vector<auto_aim_interfaces::msg::Armor_<std::allocator<void> >, std::allocator<auto_aim_interfaces::msg::Armor_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<auto_aim_interfaces::msg::Armor_<std::allocator<void> >, std::allocator<auto_aim_interfaces::msg::Armor_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Karmor[m[K’
+  158 |     double my_armor_z = armors_msg_.armors.[01;31m[Karmor[m[K.pose.position.z;
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:159:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krm_auto_aim::ArmorDetectorNode::publishMyArmorPosition(double&, double&, double&)[m[K’
+  159 |     [01;31m[KpublishMyArmorPosition(my_armor_x, my_armor_y, my_armor_z)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:25[m[K:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include/armor_detector/detector_node.hpp:56:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::publishMyArmorPosition(double, double)[m[K’
+   56 |   void [01;36m[KpublishMyArmorPosition[m[K(double, double);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include/armor_detector/detector_node.hpp:56:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K At global scope:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:294:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::publishMyArmorPosition(double, double, double)[m[K’
+  294 | void [01;31m[KArmorDetectorNode[m[K::publishMyArmorPosition(double my_armor_x, double my_armor_y, double my_armor_z)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:25[m[K:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include/armor_detector/detector_node.hpp:56:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::publishMyArmorPosition(double, double)[m[K’
+   56 |   void [01;36m[KpublishMyArmorPosition[m[K(double, double);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include/armor_detector/detector_node.hpp:33:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass rm_auto_aim::ArmorDetectorNode[m[K’ defined here
+   33 | class [01;36m[KArmorDetectorNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

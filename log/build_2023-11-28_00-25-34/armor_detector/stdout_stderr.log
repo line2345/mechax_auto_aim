@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target armor_detector_node[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target armor_detector[0m
+[ 13%] Built target gtest_main
+[ 26%] Built target gtest
+[ 40%] Built target armor_detector_node
+[ 46%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In constructor ‘[01m[Krm_auto_aim::ArmorDetectorNode::ArmorDetectorNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:96:123:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   96 |       publishMyArmorPosition((detector_->FilterUniquenessArmor()).center.x, (detector_->FilterUniquenessArmor()).center.y)
+      |                                                                                                                           [01;31m[K^[m[K
+      |                                                                                                                           [32m[K;[m[K
+   97 |       [32m[K}[m[K
+      |       [32m[K~[m[K                                                                                                                    
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

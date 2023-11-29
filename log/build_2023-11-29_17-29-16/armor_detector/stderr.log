@@ -1,0 +1,13 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:156:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kauto_aim_interfaces::msg::Armors[m[K’ {aka ‘[01m[Kauto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+  156 |     double my_armor_x = armors_msg_[01;31m[K[[m[K0].pose.position.x;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:157:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kauto_aim_interfaces::msg::Armors[m[K’ {aka ‘[01m[Kauto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+  157 |     double my_armor_y = armors_msg_[01;31m[K[[m[K0].pose.position.y;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:158:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kauto_aim_interfaces::msg::Armors[m[K’ {aka ‘[01m[Kauto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+  158 |     double my_armor_z = armors_msg_[01;31m[K[[m[K0].pose.position.z;
+      |                                    [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

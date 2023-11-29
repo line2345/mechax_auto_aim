@@ -1,0 +1,11 @@
+[01m[K/home/ghlins/new_tracker/src/my_ros2_opencv_pkg/src/my_video_publisher.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_info_pub_[m[K’ does not name a type
+   16 |     [01;31m[Kcam_info_pub_[m[K = this->create_publisher<sensor_msgs::msg::CameraInfo>("/camera_info", rclcpp::SensorDataQoS());
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/my_ros2_opencv_pkg/src/my_video_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/my_ros2_opencv_pkg/src/my_video_publisher.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_info_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcam_info_msg[m[K’?
+   62 |     [01;31m[Kcam_info_pub_[m[K->publish(cam_info_msg);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kcam_info_msg[m[K
+gmake[2]: *** [CMakeFiles/my_video_publisher.dir/build.make:76: CMakeFiles/my_video_publisher.dir/src/my_video_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_video_publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

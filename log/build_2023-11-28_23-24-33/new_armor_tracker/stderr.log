@@ -1,0 +1,10 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::CalculateKalmanFilter(double, double, double)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:62:22:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kcv::KalmanFilter KF[m[K’
+   62 |     cv::KalmanFilter [01;31m[KKF[m[K(stateNum,measureNum,0);
+      |                      [01;31m[K^~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:57:22:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::KalmanFilter KF[m[K’ previously declared here
+   57 |     cv::KalmanFilter [01;36m[KKF[m[K;
+      |                      [01;36m[K^~[m[K
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

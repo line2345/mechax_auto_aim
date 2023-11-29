@@ -1,0 +1,9 @@
+In file included from [01m[K/home/ghlins/mechax_rm_cv/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/mechax_rm_cv/src/rm_auto_aim/new_tracker/include/new_tracker/new_tracker_node.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kauto_aim_interfaces/msg/armor.hpp: No such file or directory
+    6 | #include [01;31m[K"auto_aim_interfaces/msg/armor.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

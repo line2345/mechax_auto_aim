@@ -1,0 +1,64 @@
+[0.051s] Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker
+[0.117s] -- The C compiler identification is GNU 11.4.0
+[0.389s] -- The CXX compiler identification is GNU 11.4.0
+[0.607s] -- Detecting C compiler ABI info
+[0.689s] -- Detecting C compiler ABI info - done
+[0.693s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.693s] -- Detecting C compile features
+[0.694s] -- Detecting C compile features - done
+[0.695s] -- Detecting CXX compiler ABI info
+[0.779s] -- Detecting CXX compiler ABI info - done
+[0.783s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.783s] -- Detecting CXX compile features
+[0.784s] -- Detecting CXX compile features - done
+[0.785s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.895s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.105s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.108s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.113s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.122s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.178s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.180s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.563s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.963s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.650s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.656s] -- Looking for pthread.h
+[2.739s] -- Looking for pthread.h - found
+[2.740s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.829s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.829s] -- Found Threads: TRUE  
+[4.305s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.306s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.306s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.531s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.545s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.545s] -- Configured cppcheck include dirs: /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include
+[4.545s] -- Configured cppcheck exclude dirs and/or files: 
+[4.546s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.546s] -- Added test 'lint_cmake' to check CMake code style
+[4.547s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.547s] -- Added test 'xmllint' to check XML markup files
+[4.549s] -- Added test 'clang_format' to check C / C++ code style
+[4.550s] -- Configuring done
+[4.561s] -- Generating done
+[4.562s] -- Build files have been written to: /home/ghlins/new_tracker/build/new_armor_tracker
+[4.570s] Invoked command in '/home/ghlins/new_tracker/build/new_armor_tracker' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker
+[4.571s] Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/new_armor_tracker -- -j20 -l20
+[4.599s] [ 25%] [32mBuilding CXX object CMakeFiles/new_armor_tracker_node.dir/rclcpp_components/node_main_new_armor_tracker_node.cpp.o[0m
+[4.599s] [ 50%] [32mBuilding CXX object CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o[0m
+[6.525s] [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::FindNearestArmor(const SharedPtr&)[m[K’:
+[6.525s] [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:42:7:[m[K [01;31m[Kerror: [m[K‘[01m[Karmors_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Karmors[m[K’?
+[6.525s]    42 |   if ([01;31m[Karmors_msg[m[K->armors.empty()) {
+[6.525s]       |       [01;31m[K^~~~~~~~~~[m[K
+[6.525s]       |       [32m[Karmors[m[K
+[6.530s] [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:46:19:[m[K [01;31m[Kerror: [m[K‘[01m[Karmors_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Karmors[m[K’?
+[6.530s]    46 |   tracked_armor = [01;31m[Karmors_msg[m[K->armors[0];
+[6.530s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[6.530s]       |                   [32m[Karmors[m[K
+[7.027s] [ 75%] [32m[1mLinking CXX executable new_armor_tracker_node[0m
+[7.182s] [ 75%] Built target new_armor_tracker_node
+[8.332s] gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+[8.332s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+[8.333s] gmake: *** [Makefile:146: all] Error 2
+[8.335s] Invoked command in '/home/ghlins/new_tracker/build/new_armor_tracker' returned '2': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/new_armor_tracker -- -j20 -l20

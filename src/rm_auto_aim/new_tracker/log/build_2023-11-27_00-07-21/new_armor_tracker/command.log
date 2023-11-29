@@ -1,0 +1,2 @@
+Invoking command in '/home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/mechax_rm_cv/src/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/mechax_rm_cv/src/new_tracker/install/new_armor_tracker
+Invoked command in '/home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/mechax_rm_cv/src/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/mechax_rm_cv/src/new_tracker/install/new_armor_tracker

@@ -1,0 +1,58 @@
+In file included from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include/new_tracker/new_tracker_node.hpp:46:77:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   46 |   void CalculateKalmanFilter(double center_x,double center_y,double center_z[01;31m[K)[m[K
+      |                                                                             [01;31m[K^[m[K
+      |                                                                              [32m[K;[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::ArmorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculate_kalman_filter[m[K’ was not declared in this scope; did you mean ‘[01m[KCalculateKalmanFilter[m[K’?
+   29 |   [01;31m[Kcalculate_kalman_filter[m[K(tracked_armor.pose.position.x , tracked_armor.pose.position.y , tracked_armor.pose.position.z);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KCalculateKalmanFilter[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::CalculateKalmanFilter(double, double, double)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:59:12:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kdouble center_x[m[K’ shadows a parameter
+   59 |     double [01;31m[Kcenter_x[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:55:51:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble center_x[m[K’ previously declared here
+   55 | void NewTrackerNode::CalculateKalmanFilter([01;36m[Kdouble center_x[m[K,double center_y,double center_z)
+      |                                            [01;36m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:60:12:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kdouble center_y[m[K’ shadows a parameter
+   60 |     double [01;31m[Kcenter_y[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:55:67:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble center_y[m[K’ previously declared here
+   55 | void NewTrackerNode::CalculateKalmanFilter(double center_x,[01;36m[Kdouble center_y[m[K,double center_z)
+      |                                                            [01;36m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:61:12:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kdouble center_z[m[K’ shadows a parameter
+   61 |     double [01;31m[Kcenter_z[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:55:83:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble center_z[m[K’ previously declared here
+   55 | void NewTrackerNode::CalculateKalmanFilter(double center_x,double center_y,[01;36m[Kdouble center_z[m[K)
+      |                                                                            [01;36m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[KKalmanFilter[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::KalmanFilter[m[K’?
+   65 |     [01;31m[KKalmanFilter[m[K KF(stateNum,measureNum,0);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Kcv::KalmanFilter[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/video.hpp:56[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include/new_tracker/new_tracker_node.hpp:11[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/video/tracking.hpp:360:20:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::KalmanFilter[m[K’ declared here
+  360 | class CV_EXPORTS_W [01;36m[KKalmanFilter[m[K
+      |                    [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:66:13:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kcv::Mat measurement[m[K’
+   66 |     cv::Mat [01;31m[Kmeasurement[m[K=cv::Mat::zeros(measureNum,1,CV_32F);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:58:13:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Mat measurement[m[K’ previously declared here
+   58 |     cv::Mat [01;36m[Kmeasurement[m[K;
+      |             [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:83:35:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kcv::Mat[m[K’ and ‘[01m[Kint[m[K’)
+   83 |     prediction_center.x=prediction[01;31m[K[[m[K0];
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:84:35:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kcv::Mat[m[K’ and ‘[01m[Kint[m[K’)
+   84 |     prediction_center.x=prediction[01;31m[K[[m[K1];
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:85:35:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kcv::Mat[m[K’ and ‘[01m[Kint[m[K’)
+   85 |     prediction_center.x=prediction[01;31m[K[[m[K2];
+      |                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

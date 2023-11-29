@@ -1,0 +1,5 @@
+source;share/new_armor_tracker/local_setup.bash
+source;share/new_armor_tracker/local_setup.dsv
+source;share/new_armor_tracker/local_setup.ps1
+source;share/new_armor_tracker/local_setup.sh
+source;share/new_armor_tracker/local_setup.zsh

@@ -1,0 +1,167 @@
+In file included from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:1:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+    1 | #ifndef ARMOR_PROCESSOR__PROCESSOR_NODE_HPP_
+      | 
+In file included from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:16:12:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KNewTrackerNode[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   16 |   explicit [01;31m[KNewTrackerNode[m[K(const rclcpp::NodeOptions & options);
+      |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:16:3:[m[K [01;31m[Kerror: [m[Konly declarations of constructors and conversion operators can be ‘[01m[Kexplicit[m[K’
+   16 |   [01;31m[Kexplicit[m[K NewTrackerNode(const rclcpp::NodeOptions & options);
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:26:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+   26 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K;[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:32:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+   32 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K;[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:12:1:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KNewTrackerNode[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   12 | [01;31m[KNewTracker[m[K::NewTrackerNode(const rclcpp::NodeOptions & options) : Node("new_tracker", options)
+      | [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kint rm_auto_aim::NewTracker::NewTrackerNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:12:67:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+   12 | NewTracker::NewTrackerNode(const rclcpp::NodeOptions & options) : [01;31m[KNode[m[K("new_tracker", options)
+      |                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:19:52:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorCallback[m[K’ is not a member of ‘[01m[Krm_auto_aim::NewTracker[m[K’
+   19 |     "/detector/armors", 10, std::bind(&NewTracker::[01;31m[KArmorCallback[m[K, this, std::placeholders::_1));
+      |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:24:1:[m[K [01;31m[Kerror: [m[Kno return statement in function returning non-void [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Werror=return-type]8;;[m[K]
+   24 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTracker::ArmorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:28:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   28 |   auto_aim_interfaces::msg::Armor nearest = FindNearestArmor([01;31m[Kmsg[m[K);
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:28:62:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:5[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:5[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:5[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.hpp:20[m[K,
+                 from [01m[K/home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.hpp:7[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:6[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.hpp:7[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:6[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kauto_aim_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.hpp:20[m[K,
+                 from [01m[K/home/ghlins/new_tracker/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.hpp:7[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:7[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:31:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krm_auto_aim::NewTracker::calculate_kalman_filter(geometry_msgs::msg::Point_<std::allocator<void> >::_x_type&, geometry_msgs::msg::Point_<std::allocator<void> >::_y_type&, geometry_msgs::msg::Point_<std::allocator<void> >::_z_type&)[m[K’
+   31 |   CenterCoordinates prediction_center = [01;31m[Kcalculate_kalman_filter([m[K
+      |                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   32 | [01;31m[K    nearest.pose.position.x , nearest.pose.position.y , nearest.pose.position.z)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:38:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krm_auto_aim::NewTracker::CenterCoordinates rm_auto_aim::NewTracker::calculate_kalman_filter(auto_aim_interfaces::msg::Armor)[m[K’
+   38 |   CenterCoordinates [01;36m[Kcalculate_kalman_filter[m[K(auto_aim_interfaces::msg::Armor armor);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/include/new_tracker/new_tracker_node.hpp:38:21:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:35:49:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kvoid[m[K’ to non-scalar type ‘[01m[Krm_auto_aim::NewTracker::DeflectionAngle[m[K’ requested
+   35 |   DeflectionAngle header_angle = [01;31m[KCalculateAngles([m[K
+      |                                  [01;31m[K~~~~~~~~~~~~~~~^[m[K
+   36 | [01;31m[K    prediction_center.x, prediction_center.y, prediction_center.z)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kauto_aim_interfaces::msg::Armor rm_auto_aim::NewTracker::FindNearestArmor(const SharedPtr&)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktracked_armor[m[K’ was not declared in this scope
+   49 |   [01;31m[Ktracked_armor[m[K = armors_msg->armors[0];
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:49:19:[m[K [01;31m[Kerror: [m[K‘[01m[Karmors_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Karmors[m[K’?
+   49 |   tracked_armor = [01;31m[Karmors_msg[m[K->armors[0];
+      |                   [01;31m[K^~~~~~~~~~[m[K
+      |                   [32m[Karmors[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:[m[K At global scope:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:59:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCenterCoordinates[m[K’ does not name a type
+   59 | [01;31m[KCenterCoordinates[m[K NewTracker::calculate_kalman_filter(std::float x, std::float y, std::float z)
+      | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:71:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDeflectionAngle[m[K’ does not name a type
+   71 | [01;31m[KDeflectionAngle[m[K NewTracker::CalculateAngles(std::float x, std::float y, std::float z)
+      | [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:94[m[K:
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:95:46:[m[K [01;31m[Kerror: [m[K‘[01m[KNewTrackerNode[m[K’ is not a member of ‘[01m[Krm_auto_aim[m[K’; did you mean ‘[01m[KNewTracker[m[K’?
+   95 | RCLCPP_COMPONENTS_REGISTER_NODE(rm_auto_aim::[01;31m[KNewTrackerNode[m[K)
+      |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:95:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   95 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(rm_auto_aim::NewTrackerNode)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+                 from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/new_tracker/src/new_tracker_node.cpp:94[m[K:
+/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = int; B = rclcpp_components::NodeFactory][m[K’:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint*[m[K’ to ‘[01m[Krclcpp_components::NodeFactory*[m[K’ in return
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+      |            [01;31m[K|[m[K
+      |            [01;31m[Kint*[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

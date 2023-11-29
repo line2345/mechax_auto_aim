@@ -1,0 +1,22 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::CalculateKalmanFilter(double, double, double)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:80:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Point3f[m[K’ {aka ‘[01m[Kclass cv::Point3_<float>[m[K’} has no member named ‘[01m[Kat[m[K’
+   80 |     prediction_center.x=predict_pt.[01;31m[Kat[m[K<float>(0);
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:80:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+   80 |     prediction_center.x=predict_pt.at<[01;31m[Kfloat[m[K>(0);
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:81:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Point3f[m[K’ {aka ‘[01m[Kclass cv::Point3_<float>[m[K’} has no member named ‘[01m[Kat[m[K’
+   81 |     prediction_center.x=predict_pt.[01;31m[Kat[m[K<float>(1);
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:81:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+   81 |     prediction_center.x=predict_pt.at<[01;31m[Kfloat[m[K>(1);
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:82:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Point3f[m[K’ {aka ‘[01m[Kclass cv::Point3_<float>[m[K’} has no member named ‘[01m[Kat[m[K’
+   82 |     prediction_center.x=predict_pt.[01;31m[Kat[m[K<float>(2);
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:82:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+   82 |     prediction_center.x=predict_pt.at<[01;31m[Kfloat[m[K>(2);
+      |                                       [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,15 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In constructor ‘[01m[Krm_auto_aim::NewTrackerNode::NewTrackerNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:18:56:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorCallback[m[K’ is not a member of ‘[01m[Krm_auto_aim::NewTrackerNode[m[K’
+   18 |     "/detector/armors", 10, std::bind(&NewTrackerNode::[01;31m[KArmorCallback[m[K, this, std::placeholders::_1));
+      |                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::ArmorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:29:27:[m[K [01;31m[Kerror: [m[K‘[01m[Knearest[m[K’ was not declared in this scope
+   29 |   calculate_kalman_filter([01;31m[Knearest[m[K.pose.position.x , nearest.pose.position.y , nearest.pose.position.z);
+      |                           [01;31m[K^~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K At global scope:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:40:1:[m[K [01;31m[Kerror: [m[K‘[01m[KArmor[m[K’ does not name a type
+   40 | [01;31m[KArmor[m[K NewTrackerNode::FindNearestArmor(const auto_aim_interfaces::msg::Armors::SharedPtr & armors)
+      | [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

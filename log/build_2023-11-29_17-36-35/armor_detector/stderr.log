@@ -1,0 +1,16 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:156:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Armors = struct auto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct auto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’} has no member named ‘[01m[Karmor[m[K’; did you mean ‘[01m[Karmors[m[K’?
+  156 |     double my_armor_x = armors_msg_.[01;31m[Karmor[m[K.pose.position.x;
+      |                                     [01;31m[K^~~~~[m[K
+      |                                     [32m[Karmors[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:157:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Armors = struct auto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct auto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’} has no member named ‘[01m[Karmor[m[K’; did you mean ‘[01m[Karmors[m[K’?
+  157 |     double my_armor_y = armors_msg_.[01;31m[Karmor[m[K.pose.position.y;
+      |                                     [01;31m[K^~~~~[m[K
+      |                                     [32m[Karmors[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:158:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Armors = struct auto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct auto_aim_interfaces::msg::Armors_<std::allocator<void> >[m[K’} has no member named ‘[01m[Karmor[m[K’; did you mean ‘[01m[Karmors[m[K’?
+  158 |     double my_armor_z = armors_msg_.[01;31m[Karmor[m[K.pose.position.z;
+      |                                     [01;31m[K^~~~~[m[K
+      |                                     [32m[Karmors[m[K
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

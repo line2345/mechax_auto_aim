@@ -1,0 +1,8 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/src/detector_node.cpp:157:25:[m[K [01;31m[Kerror: [m[K‘[01m[Karmors_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Karmors_msg_[m[K’?
+  157 |     double my_armor_x = [01;31m[Karmors_msg[m[K.pose.position.x;
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Karmors_msg_[m[K
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

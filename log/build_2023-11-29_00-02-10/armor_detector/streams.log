@@ -1,0 +1,108 @@
+[0.085s] Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector
+[0.199s] -- The C compiler identification is GNU 11.4.0
+[0.640s] -- The CXX compiler identification is GNU 11.4.0
+[0.977s] -- Detecting C compiler ABI info
+[1.094s] -- Detecting C compiler ABI info - done
+[1.099s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.099s] -- Detecting C compile features
+[1.100s] -- Detecting C compile features - done
+[1.102s] -- Detecting CXX compiler ABI info
+[1.237s] -- Detecting CXX compiler ABI info - done
+[1.244s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.244s] -- Detecting CXX compile features
+[1.244s] -- Detecting CXX compile features - done
+[1.245s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.383s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.461s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.647s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.650s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.655s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.665s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.683s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.735s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.736s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.318s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.062s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.195s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.202s] -- Looking for pthread.h
+[6.340s] -- Looking for pthread.h - found
+[6.340s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.488s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.489s] -- Found Threads: TRUE  
+[8.607s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[8.608s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[8.608s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.811s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.830s] -- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[8.833s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.845s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.845s] -- Configured cppcheck include dirs: /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include
+[8.845s] -- Configured cppcheck exclude dirs and/or files: 
+[8.846s] -- Added test 'lint_cmake' to check CMake code style
+[8.847s] -- Added test 'xmllint' to check XML markup files
+[8.848s] -- Added test 'clang_format' to check C / C++ code style
+[8.850s] -- Configuring done
+[8.889s] -- Generating done
+[8.892s] -- Build files have been written to: /home/ghlins/new_tracker/build/armor_detector
+[8.903s] Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector
+[8.905s] Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/armor_detector -- -j20 -l20
+[8.936s] [  6%] [32mBuilding CXX object CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o[0m
+[8.936s] [ 13%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.937s] [ 20%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o[0m
+[8.938s] [ 26%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[8.938s] [ 33%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[8.939s] [ 40%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o[0m
+[8.939s] [ 46%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[9.609s] [ 53%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[9.638s] [ 53%] Built target gtest_main
+[11.634s] [ 60%] [32m[1mLinking CXX executable armor_detector_node[0m
+[11.759s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[11.794s] [ 66%] Built target gtest
+[11.807s] [ 66%] Built target armor_detector_node
+[22.967s] [ 73%] [32m[1mLinking CXX shared library libarmor_detector.so[0m
+[23.767s] [ 73%] Built target armor_detector
+[23.779s] [ 80%] [32mBuilding CXX object CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o[0m
+[23.779s] [ 86%] [32mBuilding CXX object CMakeFiles/test_number_cls.dir/test/test_number_cls.cpp.o[0m
+[25.369s] [ 93%] [32m[1mLinking CXX executable test_number_cls[0m
+[26.019s] [ 93%] Built target test_number_cls
+[28.065s] [100%] [32m[1mLinking CXX executable test_node_startup[0m
+[28.715s] [100%] Built target test_node_startup
+[28.721s] Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/armor_detector -- -j20 -l20
+[28.745s] Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ghlins/new_tracker/build/armor_detector
+[28.749s] -- Install configuration: ""
+[28.749s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/lib/armor_detector/armor_detector_node
+[28.750s] -- Set runtime path of "/home/ghlins/new_tracker/install/armor_detector/lib/armor_detector/armor_detector_node" to ""
+[28.750s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include
+[28.750s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include/armor_detector
+[28.750s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include/armor_detector/number_classifier.hpp
+[28.750s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include/armor_detector/detector_node.hpp
+[28.750s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include/armor_detector/detector.hpp
+[28.750s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include/armor_detector/armor.hpp
+[28.751s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/include/armor_detector/pnp_solver.hpp
+[28.751s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/environment/library_path.sh
+[28.751s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/environment/library_path.dsv
+[28.751s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/lib/libarmor_detector.so
+[28.762s] -- Set runtime path of "/home/ghlins/new_tracker/install/armor_detector/lib/libarmor_detector.so" to ""
+[28.762s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/model
+[28.762s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/model/mlp.onnx
+[28.762s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/model/label.txt
+[28.762s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/ament_index/resource_index/package_run_dependencies/armor_detector
+[28.762s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/ament_index/resource_index/parent_prefix_path/armor_detector
+[28.762s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/environment/ament_prefix_path.sh
+[28.762s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/environment/ament_prefix_path.dsv
+[28.762s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/environment/path.sh
+[28.762s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/environment/path.dsv
+[28.762s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/local_setup.bash
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/local_setup.sh
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/local_setup.zsh
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/local_setup.dsv
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.dsv
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/ament_index/resource_index/packages/armor_detector
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/ament_index/resource_index/rclcpp_components/armor_detector
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.763s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.764s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[28.764s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig.cmake
+[28.764s] -- Installing: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig-version.cmake
+[28.764s] -- Up-to-date: /home/ghlins/new_tracker/install/armor_detector/share/armor_detector/package.xml
+[28.767s] Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ghlins/new_tracker/build/armor_detector

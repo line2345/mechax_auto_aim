@@ -1,0 +1,20 @@
+In file included from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include/new_tracker/new_tracker_node.hpp:46:77:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   46 |   void CalculateKalmanFilter(double center_x,double center_y,double center_z[01;31m[K)[m[K
+      |                                                                             [01;31m[K^[m[K
+      |                                                                              [32m[K;[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::CalculateKalmanFilter(double, double, double)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[KKalmanFilter[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::KalmanFilter[m[K’?
+   62 |     [01;31m[KKalmanFilter[m[K KF(stateNum,measureNum,0);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Kcv::KalmanFilter[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/video.hpp:56[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include/new_tracker/new_tracker_node.hpp:11[m[K,
+                 from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/video/tracking.hpp:360:20:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::KalmanFilter[m[K’ declared here
+  360 | class CV_EXPORTS_W [01;36m[KKalmanFilter[m[K
+      |                    [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

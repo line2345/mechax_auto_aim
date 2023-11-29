@@ -1,0 +1,69 @@
+[0.101s] Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector
+[0.202s] -- The C compiler identification is GNU 11.4.0
+[0.625s] -- The CXX compiler identification is GNU 11.4.0
+[0.955s] -- Detecting C compiler ABI info
+[1.053s] -- Detecting C compiler ABI info - done
+[1.058s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.058s] -- Detecting C compile features
+[1.058s] -- Detecting C compile features - done
+[1.060s] -- Detecting CXX compiler ABI info
+[1.175s] -- Detecting CXX compiler ABI info - done
+[1.180s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.180s] -- Detecting CXX compile features
+[1.180s] -- Detecting CXX compile features - done
+[1.181s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.311s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.375s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.505s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.509s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.518s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.532s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.552s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.628s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.631s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.057s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.528s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.314s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.321s] -- Looking for pthread.h
+[3.435s] -- Looking for pthread.h - found
+[3.436s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.545s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.545s] -- Found Threads: TRUE  
+[5.284s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.285s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[5.285s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.480s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.492s] -- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[5.493s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.500s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.500s] -- Configured cppcheck include dirs: /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector/include
+[5.500s] -- Configured cppcheck exclude dirs and/or files: 
+[5.501s] -- Added test 'lint_cmake' to check CMake code style
+[5.501s] -- Added test 'xmllint' to check XML markup files
+[5.502s] -- Added test 'clang_format' to check C / C++ code style
+[5.504s] -- Configuring done
+[5.528s] -- Generating done
+[5.530s] -- Build files have been written to: /home/ghlins/new_tracker/build/armor_detector
+[5.540s] Invoked command in '/home/ghlins/new_tracker/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/armor_detector -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/armor_detector
+[5.540s] Invoking command in '/home/ghlins/new_tracker/build/armor_detector': AMENT_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ghlins/new_tracker/build/armor_detector -- -j20 -l20
+[5.573s] [  6%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.574s] [ 13%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o[0m
+[5.574s] [ 26%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[5.575s] [ 26%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[5.575s] [ 40%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[5.575s] [ 40%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o[0m
+[5.575s] [ 46%] [32mBuilding CXX object CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o[0m
+[6.302s] [ 53%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[6.329s] [ 53%] Built target gtest_main
+[8.115s] [ 60%] [32m[1mLinking CXX static library libgtest.a[0m
+[8.164s] [ 60%] Built target gtest
+[8.323s] [ 66%] [32m[1mLinking CXX executable armor_detector_node[0m
+[8.514s] [ 66%] Built target armor_detector_node
+[19.703s] [ 73%] [32m[1mLinking CXX shared library libarmor_detector.so[0m
+[20.491s] [ 73%] Built target armor_detector
+[20.503s] [ 86%] [32mBuilding CXX object CMakeFiles/test_number_cls.dir/test/test_number_cls.cpp.o[0m
+[20.504s] [ 86%] [32mBuilding CXX object CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o[0m
+[21.988s] [ 93%] [32m[1mLinking CXX executable test_number_cls[0m
+[22.653s] [ 93%] Built target test_number_cls
+[24.795s] [100%] [32m[1mLinking CXX executable test_node_startup[0m
+[25.427s] [100%] Built target test_node_startup

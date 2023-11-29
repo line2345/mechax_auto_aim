@@ -1,0 +1,8 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::CalculateKalmanFilter(double, double, double)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:71:17:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kpredict_pt[m[K’ set but not used [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Werror=unused-but-set-variable]8;;[m[K]
+   71 |     cv::Point3f [01;31m[Kpredict_pt[m[K=cv::Point3f((int)prediction.at<float>(0),(int)prediction.at<float>(1),(int)prediction.at<float>(2));
+      |                 [01;31m[K^~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

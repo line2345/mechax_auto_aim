@@ -1,0 +1,3 @@
+source;share/new_armor_tracker/environment/ament_prefix_path.sh
+source;share/new_armor_tracker/environment/library_path.sh
+source;share/new_armor_tracker/environment/path.sh

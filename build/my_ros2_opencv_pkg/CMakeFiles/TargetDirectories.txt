@@ -1,0 +1,10 @@
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/uninstall.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/my_ros2_opencv_pkg_uninstall.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/my_video_publisher.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/test.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/edit_cache.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/rebuild_cache.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/list_install_components.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/install.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/install/local.dir
+/home/ghlins/new_tracker/build/my_ros2_opencv_pkg/CMakeFiles/install/strip.dir

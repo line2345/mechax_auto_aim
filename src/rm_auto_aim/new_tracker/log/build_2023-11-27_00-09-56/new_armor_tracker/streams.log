@@ -1,0 +1,61 @@
+[0.007s] Invoking command in '/home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/mechax_rm_cv/src/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/mechax_rm_cv/src/new_tracker/install/new_armor_tracker
+[0.087s] -- The C compiler identification is GNU 11.4.0
+[0.419s] -- The CXX compiler identification is GNU 11.4.0
+[0.675s] -- Detecting C compiler ABI info
+[0.762s] -- Detecting C compiler ABI info - done
+[0.767s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.767s] -- Detecting C compile features
+[0.767s] -- Detecting C compile features - done
+[0.769s] -- Detecting CXX compiler ABI info
+[0.889s] -- Detecting CXX compiler ABI info - done
+[0.894s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.894s] -- Detecting CXX compile features
+[0.894s] -- Detecting CXX compile features - done
+[0.896s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.007s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.246s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.251s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.261s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.275s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.293s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.356s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.359s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.280s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.244s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.036s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.047s] -- Looking for pthread.h
+[5.134s] -- Looking for pthread.h - found
+[5.134s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.231s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.231s] -- Found Threads: TRUE  
+[6.456s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[6.458s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.458s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[7.496s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.521s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.521s] -- Configured cppcheck include dirs: /home/ghlins/mechax_rm_cv/src/new_tracker/include
+[7.521s] -- Configured cppcheck exclude dirs and/or files: 
+[7.522s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.523s] -- Added test 'lint_cmake' to check CMake code style
+[7.524s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.525s] -- Added test 'xmllint' to check XML markup files
+[7.527s] -- Added test 'clang_format' to check C / C++ code style
+[7.530s] -- Configuring done
+[7.541s] -- Generating done
+[7.542s] -- Build files have been written to: /home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker
+[7.550s] Invoked command in '/home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ghlins/mechax_rm_cv/src/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/mechax_rm_cv/src/new_tracker/install/new_armor_tracker
+[7.550s] Invoking command in '/home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker -- -j20 -l20
+[7.581s] [ 50%] [32mBuilding CXX object CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o[0m
+[7.581s] [ 50%] [32mBuilding CXX object CMakeFiles/new_armor_tracker_node.dir/rclcpp_components/node_main_new_armor_tracker_node.cpp.o[0m
+[7.768s] In file included from [01m[K/home/ghlins/mechax_rm_cv/src/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[7.768s] [01m[K/home/ghlins/mechax_rm_cv/src/new_tracker/include/new_tracker/new_tracker_node.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kauto_aim_interfaces/msg/armor.hpp: No such file or directory
+[7.768s]     6 | #include [01;31m[K"auto_aim_interfaces/msg/armor.hpp"[m[K
+[7.768s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.768s] compilation terminated.
+[7.769s] gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+[7.769s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+[7.769s] gmake[1]: *** Waiting for unfinished jobs....
+[9.656s] [ 75%] [32m[1mLinking CXX executable new_armor_tracker_node[0m
+[9.813s] [ 75%] Built target new_armor_tracker_node
+[9.814s] gmake: *** [Makefile:146: all] Error 2
+[9.815s] Invoked command in '/home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ghlins/mechax_rm_cv/src/new_tracker/build/new_armor_tracker -- -j20 -l20
