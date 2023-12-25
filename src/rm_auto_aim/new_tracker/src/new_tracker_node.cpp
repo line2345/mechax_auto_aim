@@ -26,7 +26,7 @@ void NewTrackerNode::ArmorsCallback(const auto_aim_interfaces::msg::Armors::Shar
 {
   FindNearestArmor(armors_msg);
   //TO DO
-  CalculateKalmanFilter(tracked_armor.pose.position.x , tracked_armor.pose.position.y , tracked_armor.pose.position.z);
+  FakeCalculateKalmanFilter(tracked_armor.pose.position.x , tracked_armor.pose.position.y , tracked_armor.pose.position.z);
   //to do
   CalculateAngles(prediction_center.x, prediction_center.y, prediction_center.z);
   
@@ -42,7 +42,7 @@ void NewTrackerNode::FindNearestArmor(const Armors::SharedPtr & armors_msg)
   if (armors_msg->armors.empty()) {
     return;
   }
-  double min_distance = 0;
+  double min_distance = 9999999;
   tracked_armor = armors_msg->armors[0];
   for (const auto & armor : armors_msg->armors) {
     if (armor.distance_to_image_center < min_distance) {
@@ -78,9 +78,15 @@ void NewTrackerNode::CalculateKalmanFilter(double center_x,double center_y,doubl
     center_z=(int)prediction.at<float>(2);
 
     prediction_center.x=center_x;
-    prediction_center.x=center_y;
-    prediction_center.x=center_z;
+    prediction_center.y=center_y;
+    prediction_center.z=center_z;
 	}
+void NewTrackerNode::FakeCalculateKalmanFilter(double center_x,double center_y,double center_z)
+{
+  prediction_center.x=center_x;
+  prediction_center.y=center_y;
+  prediction_center.z=center_z;
+}
 
 void NewTrackerNode::CalculateAngles(float x, float y, float z)
 {

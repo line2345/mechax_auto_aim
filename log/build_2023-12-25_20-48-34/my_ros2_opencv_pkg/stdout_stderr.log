@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target my_video_publisher[0m
+[100%] Built target my_video_publisher
+-- Install configuration: ""
+-- Up-to-date: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/my_ros2_opencv_pkg/my_video_publisher
+[31mCMake Error at cmake_install.cmake:66 (file):
+  file INSTALL cannot find
+  "/home/ghlins/new_tracker/src/my_ros2_opencv_pkg/launch": No such file or
+  directory.
+
+[0m

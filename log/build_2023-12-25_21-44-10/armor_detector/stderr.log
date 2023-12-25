@@ -1,0 +1,6 @@
+gmake[2]: *** Deleting file 'test_number_cls'
+gmake[2]: *** [CMakeFiles/test_node_startup.dir/build.make:76: CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/test_node_startup.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/test_number_cls.dir/build.make:291: test_number_cls] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:243: CMakeFiles/test_number_cls.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

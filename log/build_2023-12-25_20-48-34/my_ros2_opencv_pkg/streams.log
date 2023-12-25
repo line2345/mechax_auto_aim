@@ -1,0 +1,14 @@
+[0.011s] Invoking command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ghlins/new_tracker/build/my_ros2_opencv_pkg -- -j20 -l20
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target my_video_publisher[0m
+[0.043s] [100%] Built target my_video_publisher
+[0.051s] Invoked command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ghlins/new_tracker/build/my_ros2_opencv_pkg -- -j20 -l20
+[0.072s] Invoking command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ghlins/new_tracker/build/my_ros2_opencv_pkg
+[0.077s] -- Install configuration: ""
+[0.077s] -- Up-to-date: /home/ghlins/new_tracker/install/my_ros2_opencv_pkg/lib/my_ros2_opencv_pkg/my_video_publisher
+[0.077s] [31mCMake Error at cmake_install.cmake:66 (file):
+[0.077s]   file INSTALL cannot find
+[0.077s]   "/home/ghlins/new_tracker/src/my_ros2_opencv_pkg/launch": No such file or
+[0.077s]   directory.
+[0.077s] 
+[0.078s] [0m
+[0.078s] Invoked command in '/home/ghlins/new_tracker/build/my_ros2_opencv_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ghlins/new_tracker/build/my_ros2_opencv_pkg

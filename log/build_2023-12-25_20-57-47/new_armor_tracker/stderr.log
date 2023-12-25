@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:66 (file):
+  file INSTALL cannot find
+  "/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/launch": No such file
+  or directory.
+
+[0m

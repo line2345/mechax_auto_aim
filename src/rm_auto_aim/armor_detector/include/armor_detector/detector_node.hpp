@@ -53,7 +53,7 @@ private:
   auto_aim_interfaces::msg::Armors armors_msg_;
   rclcpp::Publisher<auto_aim_interfaces::msg::Armors>::SharedPtr armors_pub_;
   
-  void publishMyArmorPosition(double, double, double);
+  //void publishMyArmorPosition(double, double, double);
   //发布装甲板中心坐标供目标预测订阅
   geometry_msgs::msg::Vector3 central_msg_;
   rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr central_pub_;

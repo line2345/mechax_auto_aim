@@ -1,0 +1,54 @@
+[0.067s] Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/home/ghlins/new_tracker/install/new_armor_tracker:/home/ghlins/new_tracker/install/my_ros2_opencv_pkg:/home/ghlins/new_tracker/install/armor_detector:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/home/ghlins/new_tracker/install/new_armor_tracker/lib:/home/ghlins/new_tracker/install/armor_detector/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker
+[0.146s] -- The C compiler identification is GNU 11.4.0
+[0.482s] -- The CXX compiler identification is GNU 11.4.0
+[0.770s] -- Detecting C compiler ABI info
+[0.917s] -- Detecting C compiler ABI info - done
+[0.922s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.922s] -- Detecting C compile features
+[0.922s] -- Detecting C compile features - done
+[0.924s] -- Detecting CXX compiler ABI info
+[1.080s] -- Detecting CXX compiler ABI info - done
+[1.086s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.087s] -- Detecting CXX compile features
+[1.087s] -- Detecting CXX compile features - done
+[1.090s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.244s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.315s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.557s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.563s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.573s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.586s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.603s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.664s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.666s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.221s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.803s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.751s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.759s] -- Looking for pthread.h
+[3.886s] -- Looking for pthread.h - found
+[3.887s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.016s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.017s] -- Found Threads: TRUE  
+[5.601s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.603s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[5.603s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.892s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.916s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.916s] -- Configured cppcheck include dirs: /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include
+[5.916s] -- Configured cppcheck exclude dirs and/or files: 
+[5.917s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.918s] -- Added test 'lint_cmake' to check CMake code style
+[5.919s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.920s] -- Added test 'xmllint' to check XML markup files
+[5.922s] -- Added test 'clang_format' to check C / C++ code style
+[5.925s] -- Configuring done
+[5.940s] -- Generating done
+[5.942s] -- Build files have been written to: /home/ghlins/new_tracker/build/new_armor_tracker
+[5.951s] Invoked command in '/home/ghlins/new_tracker/build/new_armor_tracker' returned '0': CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/home/ghlins/new_tracker/install/new_armor_tracker:/home/ghlins/new_tracker/install/my_ros2_opencv_pkg:/home/ghlins/new_tracker/install/armor_detector:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/home/ghlins/new_tracker/install/new_armor_tracker/lib:/home/ghlins/new_tracker/install/armor_detector/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/ghlins/new_tracker/src/rm_auto_aim/new_tracker -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/new_armor_tracker
+[5.951s] Invoking command in '/home/ghlins/new_tracker/build/new_armor_tracker': CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces:/home/ghlins/new_tracker/install/new_armor_tracker:/home/ghlins/new_tracker/install/my_ros2_opencv_pkg:/home/ghlins/new_tracker/install/armor_detector:/opt/ros/humble LD_LIBRARY_PATH=/home/ghlins/new_tracker/install/auto_aim_interfaces/lib:/home/ghlins/new_tracker/install/new_armor_tracker/lib:/home/ghlins/new_tracker/install/armor_detector/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ghlins/new_tracker/build/new_armor_tracker -- -j20 -l20
+[5.998s] [ 50%] [32mBuilding CXX object CMakeFiles/new_armor_tracker_node.dir/rclcpp_components/node_main_new_armor_tracker_node.cpp.o[0m
+[5.998s] [ 50%] [32mBuilding CXX object CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o[0m
+[9.427s] [ 75%] [32m[1mLinking CXX executable new_armor_tracker_node[0m
+[9.581s] [ 75%] Built target new_armor_tracker_node
+[14.214s] [100%] [32m[1mLinking CXX shared library libnew_armor_tracker.so[0m
+[14.737s] [100%] Built target new_armor_tracker

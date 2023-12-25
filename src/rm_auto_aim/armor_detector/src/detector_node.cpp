@@ -157,12 +157,13 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
 
     // Publishing detected armors
     armors_pub_->publish(armors_msg_);
+
     //发布一下，太难了
-    //double my_armor_x = armors_msg_.armors[0].pose.position.x;
-    //double my_armor_y = armors_msg_.armors[0].pose.position.y;
-    //double my_armor_z = armors_msg_.armors[0].pose.position.z;
-    //publishMyArmorPosition(my_armor_x, my_armor_y, my_armor_z);
-    
+    //central_msg_.x = armors_msg_.armors[0].pose.position.x;
+    //central_msg_.y = armors_msg_.armors[0].pose.position.y;
+    //central_msg_.z = armors_msg_.armors[0].pose.position.z; 
+    //central_pub_->publish(central_msg_);  
+      
     // Publishing marker
     publishMarkers();
   }
@@ -295,15 +296,15 @@ void ArmorDetectorNode::publishMarkers()
   marker_pub_->publish(marker_array_);
 }
 
-//新增加的向目标预测发布装甲板中心坐标的函数
-void ArmorDetectorNode::publishMyArmorPosition(double my_armor_x, double my_armor_y, double my_armor_z)
-{
-    central_msg_.x = my_armor_x;
-    central_msg_.y = my_armor_y;
-    central_msg_.z = my_armor_z; 
-
-    central_pub_->publish(central_msg_);
-}
+//检测哪儿出问题了函数
+//void ArmorDetectorNode::publishMyArmorPosition(double my_armor_x, double my_armor_y, double my_armor_z)
+//{
+//    central_msg_.x = my_armor_x;
+//    central_msg_.y = my_armor_y;
+//    central_msg_.z = my_armor_z; 
+//
+//    central_pub_->publish(central_msg_);
+//}
 
 
 

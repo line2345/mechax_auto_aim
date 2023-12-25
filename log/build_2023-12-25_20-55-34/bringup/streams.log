@@ -1,0 +1,28 @@
+[0.051s] Invoking command in '/home/ghlins/new_tracker/build/bringup': CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/my_ros2_opencv_pkg:/home/ghlins/new_tracker/install/new_armor_tracker:/home/ghlins/new_tracker/install/armor_detector:/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble /usr/bin/cmake /home/ghlins/new_tracker/src/bringup -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/bringup
+[0.167s] -- The C compiler identification is GNU 11.4.0
+[0.617s] -- The CXX compiler identification is GNU 11.4.0
+[0.994s] -- Detecting C compiler ABI info
+[1.173s] -- Detecting C compiler ABI info - done
+[1.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.185s] -- Detecting C compile features
+[1.186s] -- Detecting C compile features - done
+[1.190s] -- Detecting CXX compiler ABI info
+[1.405s] -- Detecting CXX compiler ABI info - done
+[1.416s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.417s] -- Detecting CXX compile features
+[1.418s] -- Detecting CXX compile features - done
+[1.421s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.676s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.794s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.879s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[1.879s]   ament_package_xml() package name 'bringup' in '/package.xml' does not match
+[1.879s]   current PROJECT_NAME 'vision_bringup'.  You must call project() with the
+[1.879s]   same package name before.
+[1.879s] Call Stack (most recent call first):
+[1.879s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.879s]   CMakeLists.txt:9 (ament_lint_auto_find_test_dependencies)
+[1.880s] 
+[1.880s] [0m
+[1.880s] -- Configuring incomplete, errors occurred!
+[1.880s] See also "/home/ghlins/new_tracker/build/bringup/CMakeFiles/CMakeOutput.log".
+[1.886s] Invoked command in '/home/ghlins/new_tracker/build/bringup' returned '1': CMAKE_PREFIX_PATH=/home/ghlins/new_tracker/install/my_ros2_opencv_pkg:/home/ghlins/new_tracker/install/new_armor_tracker:/home/ghlins/new_tracker/install/armor_detector:/home/ghlins/new_tracker/install/auto_aim_interfaces:/opt/ros/humble /usr/bin/cmake /home/ghlins/new_tracker/src/bringup -DCMAKE_INSTALL_PREFIX=/home/ghlins/new_tracker/install/bringup

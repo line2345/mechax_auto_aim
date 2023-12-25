@@ -1,0 +1,16 @@
+/home/ghlins/new_tracker/install/bringup/share/bringup/launch/Three.launch.py
+/home/ghlins/new_tracker/install/bringup/share/ament_index/resource_index/package_run_dependencies/bringup
+/home/ghlins/new_tracker/install/bringup/share/ament_index/resource_index/parent_prefix_path/bringup
+/home/ghlins/new_tracker/install/bringup/share/bringup/environment/ament_prefix_path.sh
+/home/ghlins/new_tracker/install/bringup/share/bringup/environment/ament_prefix_path.dsv
+/home/ghlins/new_tracker/install/bringup/share/bringup/environment/path.sh
+/home/ghlins/new_tracker/install/bringup/share/bringup/environment/path.dsv
+/home/ghlins/new_tracker/install/bringup/share/bringup/local_setup.bash
+/home/ghlins/new_tracker/install/bringup/share/bringup/local_setup.sh
+/home/ghlins/new_tracker/install/bringup/share/bringup/local_setup.zsh
+/home/ghlins/new_tracker/install/bringup/share/bringup/local_setup.dsv
+/home/ghlins/new_tracker/install/bringup/share/bringup/package.dsv
+/home/ghlins/new_tracker/install/bringup/share/ament_index/resource_index/packages/bringup
+/home/ghlins/new_tracker/install/bringup/share/bringup/cmake/bringupConfig.cmake
+/home/ghlins/new_tracker/install/bringup/share/bringup/cmake/bringupConfig-version.cmake
+/home/ghlins/new_tracker/install/bringup/share/bringup/package.xml

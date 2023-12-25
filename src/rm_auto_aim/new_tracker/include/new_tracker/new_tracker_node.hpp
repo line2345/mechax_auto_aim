@@ -44,6 +44,7 @@ private:
   void ArmorsCallback(const auto_aim_interfaces::msg::Armors::SharedPtr armors_msg);
   void FindNearestArmor(const Armors::SharedPtr & armors_msg);
   void CalculateKalmanFilter(double center_x,double center_y,double center_z);
+  void FakeCalculateKalmanFilter(double center_x,double center_y,double center_z);
   void CalculateAngles(float x, float y, float z);
   //rcl变量
   rclcpp::Subscription<auto_aim_interfaces::msg::Armors>::SharedPtr armor_sub_;

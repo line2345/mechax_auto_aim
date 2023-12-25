@@ -1,0 +1,17 @@
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::ArmorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[KFakeCalculateKalmanFilter[m[K’ was not declared in this scope; did you mean ‘[01m[KCalculateKalmanFilter[m[K’?
+   29 |   [01;31m[KFakeCalculateKalmanFilter[m[K(tracked_armor.pose.position.x , tracked_armor.pose.position.y , tracked_armor.pose.position.z);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KCalculateKalmanFilter[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:[m[K At global scope:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:84:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::FakeCalculateKalmanFilter(double, double, double)[m[K’
+   84 | void [01;31m[KNewTrackerNode[m[K::FakeCalculateKalmanFilter(double center_x,double center_y,double center_z)
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:84:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid rm_auto_aim::NewTrackerNode::FakeCalculateKalmanFilter(double, double, double)[m[K’
+In file included from [01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/src/new_tracker_node.cpp:1[m[K:
+[01m[K/home/ghlins/new_tracker/src/rm_auto_aim/new_tracker/include/new_tracker/new_tracker_node.hpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass rm_auto_aim::NewTrackerNode[m[K’ defined here
+   19 | class [01;36m[KNewTrackerNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/new_armor_tracker.dir/build.make:76: CMakeFiles/new_armor_tracker.dir/src/new_tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/new_armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
